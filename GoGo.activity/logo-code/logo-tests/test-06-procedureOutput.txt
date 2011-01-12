@@ -1,0 +1,7 @@
+to main
+   wait sleeptime
+end
+
+to sleeptime
+   output 10
+end

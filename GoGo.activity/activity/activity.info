@@ -1,0 +1,10 @@
+[Activity]
+name = GoGo
+bundle_id = org.laptop.GoGo
+service_name = org.laptop.GoGo
+exec = sugar-activity GoGoActivity.GoGoActivity -s
+icon = GoGo
+activity_version = 1
+#mime_types = application/vnd.olpc-sugar;x/application/vnd.olpc-sugar;application/vnd.oasis.opendocument.text
+show_launcher = yes
+#update_url = http://wiki.laptop.org/go/GoGo

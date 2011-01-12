@@ -1,0 +1,93 @@
+global x
+to start
+	setx 0
+	abcd,off	
+	a, thisway
+	d, thatway
+	loop
+	[
+		ifelse (sensor8<512)
+		[
+			if (x=0)
+			[
+				setx 1
+				d,off
+				a,on
+				a,thisway
+				beep
+			]
+			if (x=2)
+			[
+				setx 3
+				a,thatway				
+				beep
+			]
+			if (x=4)
+			[
+				setx 5
+				a,off
+				b,on
+				b,thatway
+				beep
+			]
+			if (x=6)
+			[
+				setx 7
+				b,thisway
+				beep
+			]
+
+
+			if (x=8)
+			[
+				setx 9
+				b,off
+				c,on
+				c,thisway
+				beep
+			]
+
+
+			if (x=10)
+			[
+				setx 11
+				c,thisway
+				beep
+			]
+
+
+			if (x=12)
+			[
+				setx 13
+				c,off
+				d,on
+				d,thatway
+				beep
+			]
+
+
+			if (x=14)
+			[
+				setx 15
+				d,thisway
+				beep
+			]
+
+
+
+
+
+		]		
+		[
+			if (x=1)[setx 2]
+			if (x=3)[setx 4]
+			if (x=5)[setx 6]
+			if (x=7)[setx 8]
+			if (x=9)[setx 10]
+			if (x=11)[setx 12]
+			if (x=13)[setx 14]
+			if (x=15)[setx 0]
+		]
+
+	]
+end

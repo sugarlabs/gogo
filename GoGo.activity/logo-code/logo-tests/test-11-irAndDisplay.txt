@@ -1,0 +1,3 @@
+to testIR
+   ifelse newir? [ if ir = 124 [ show "hi ] ] [ show 0 ]
+end

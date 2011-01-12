@@ -1,0 +1,6 @@
+to testSerial
+  forever [
+    waituntil [newserial?]
+    if serial = 0 [a, onfor 10]
+  ]
+end

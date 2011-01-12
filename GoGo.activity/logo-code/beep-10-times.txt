@@ -1,0 +1,4 @@
+to test
+	repeat 10
+		[ beep wait 2 ]
+end

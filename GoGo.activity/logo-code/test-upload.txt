@@ -1,0 +1,10 @@
+to test
+	resetdp
+	repeat 6 [ 
+		record sensor1
+		beep
+		wait 50
+	]
+	beep
+end
+

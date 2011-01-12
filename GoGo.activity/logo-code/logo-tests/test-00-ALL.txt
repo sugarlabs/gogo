@@ -1,0 +1,220 @@
+;====================================
+;Test All
+
+to testAll
+    basicTest
+    motorTest
+    testSensors
+    controlFlow
+    main1
+    main2
+    testLogic
+    testMath
+    dataRecording
+    testVariables
+    testIR
+    testSerial
+    main3
+end
+
+
+;====================================
+;Test 1: Basic test
+
+to basicTest
+    repeat 5 [ beep wait 10 ]
+end
+
+
+;====================================
+;Test 2: Testing motor ports
+
+to motorTest
+    a,
+    b,
+    c,
+    d,
+    ab,
+    ac,
+    ad,
+    ba,
+    bc,
+    bd,
+    ca,
+    cb,
+    cd,
+    da,
+    db,
+    dc,
+    abc,
+    abd,
+    acb,
+    acd,
+   adb,
+   adc,
+   bac,
+   bad,
+   bca,
+   bcd,
+   bda,
+   bdc,
+   cab,
+   cad,
+   cba,
+   cbd,
+   cda,
+   cdb,
+   dab,
+   dac,
+   dba,
+   dbc,
+   dca,
+   dcb,
+   abcd,
+   abdc,
+   acbd,
+   acdb,
+   adbc,
+   adcb,
+   bacd,
+   badc,
+   bcad,
+   bcda,
+   bdac,
+   bdca,
+   cabd,
+   cadb,
+   cbad,
+   cbda,
+   cdab,
+   cdba,
+   dabc,
+   dacb,
+   dbac,
+   dbca,
+   dcab,
+   dcba,
+end
+
+
+;====================================
+;Test 3: Sensors
+
+to testSensors
+   if sensor1 < 500 [ beep ]
+   if sensor2 < 500 [ beep ]
+   if sensor3 < 500 [ beep ]
+   if sensor4 < 500 [ beep ]
+   if sensor5 < 500 [ beep ]
+   if sensor6 < 500 [ beep ]
+   if sensor7 < 500 [ beep ]
+   if sensor8 < 500 [ beep ]
+end
+
+
+;====================================
+;Test 4. Control flow
+
+to controlFlow
+    forever [
+      repeat 5 [ if sensor1 < 100 [beep]
+                     ifelse sensor1 < 100 [ beep ] [ ledon ]
+                     waituntil [ sensor1 < 100 ]
+                   ]
+]
+end
+
+
+;====================================
+;Test 5: procedures calls
+
+to main1
+   sub1
+end
+
+to sub1
+   if sensor1 < 100 [ stop ]
+   beep
+end
+
+
+;====================================
+;Test 6: procedure output
+
+to main2
+   wait sleeptime
+end
+
+to sleeptime
+   output 10
+end
+
+
+;====================================
+;Test 7:  Logical operations
+
+to testLogic
+  if not sensor1 < 500 and sensor2 > 500 or sensor3 < 500 [beep]
+end
+
+
+;====================================
+;Test 8: math operations
+
+to testMath
+   if 10 + 10 - 10 / 10 * random % 10 < 10 [ beep ]
+end
+
+
+;====================================
+;Test 9: data recording
+
+to dataRecording
+    resetdp
+    repeat 60 [ record sensor1 beep wait 10 ]
+end
+
+
+;====================================
+;Test 10: Variables
+
+to testVariables
+    make “count 0
+    forever [
+         if sensor1 < 500 [
+              make “count :count + 1
+              repeat :count [beep wait 5 ]
+              waituntil [sensor1 > 499]
+         ]
+    ]
+end
+
+;====================================
+;test 11: Infrared and display module
+
+to testIR
+   ifelse newir? [ if ir = 124 [ show "hi ] ] [ show 0 ]
+end
+
+
+;====================================
+;test 12: serial
+
+to testSerial
+  forever [
+    waituntil [newserial?]
+    if serial = 0 [a, onfor 10]
+  ]
+end
+
+
+;====================================
+;test 13: procedure call with arguments
+
+to main3
+  repeat dosum 2 3 [ beep wait 2]
+end
+
+to dosum :a :b
+   output :a + :b
+end

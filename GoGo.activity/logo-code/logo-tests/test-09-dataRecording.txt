@@ -1,0 +1,4 @@
+to dataRecording
+    resetdp
+    repeat 60 [ record sensor1 beep wait 10 ]
+end

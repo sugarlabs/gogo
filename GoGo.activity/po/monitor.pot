@@ -1,0 +1,1 @@
+/home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/po/GoGo.pot

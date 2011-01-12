@@ -1,0 +1,13 @@
+to sleeptime
+	output 10
+end
+
+to test
+	make "x sleeptime
+	wait :x
+	repeat 5 [
+		beep
+		wait sleeptime
+	]
+end
+

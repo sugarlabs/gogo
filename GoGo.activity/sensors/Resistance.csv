@@ -1,0 +1,17 @@
+Resistance-Import,KOhms,Calculates raw resistance of the sensor
+Begin Table
+    0 ,      0.000
+  100 ,      3.575
+  200 ,      8.019
+  300 ,     13.693
+  400 ,     21.188
+  500 ,     31.549
+  600 ,     46.809
+  700 ,     71.517
+  800 ,    118.386
+  900 ,    241.463
+  950 ,    429.452
+  975 ,    670.313
+ 1000 ,   1434.783
+
+End Table

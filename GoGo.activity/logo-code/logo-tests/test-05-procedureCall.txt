@@ -1,0 +1,8 @@
+to main
+   sub1
+end
+
+to sub1
+   if sensor1 < 100 [ stop ]
+   beep
+end

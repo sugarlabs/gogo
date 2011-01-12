@@ -1,0 +1,9 @@
+?
+to test
+	repeat 5 [
+		recor sensor
+		repeat 1 [
+			bee
+		]
+		wai 5
+end

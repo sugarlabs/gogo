@@ -1,0 +1,8 @@
+to test
+	repeat 10 [
+		ifelse switch1 [ledon] [ledoff]
+		wait 5
+	]
+	beep
+end
+

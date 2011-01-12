@@ -1,0 +1,10 @@
+to testVariables
+    make “count 0
+    forever [
+         if sensor1 < 500 [
+              make “count :count + 1
+              repeat :count [beep wait 5 ]
+              waituntil [sensor1 > 499]
+         ]
+    ]
+end

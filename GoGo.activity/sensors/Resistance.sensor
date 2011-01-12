@@ -1,0 +1,57 @@
+[POINT 5]
+y = 31.549
+x = 500
+
+[POINT 4]
+y = 21.188
+x = 400
+
+[POINT 7]
+y = 71.517
+x = 700
+
+[POINT 6]
+y = 46.809
+x = 600
+
+[POINT 1]
+y = 3.575
+x = 100
+
+[POINT 0]
+y = 0.0
+x = 0
+
+[POINT 3]
+y = 13.693
+x = 300
+
+[POINT 2]
+y = 8.019
+x = 200
+
+[POINT 9]
+y = 241.463
+x = 900
+
+[POINT 8]
+y = 118.386
+x = 800
+
+[POINT 11]
+y = 670.313
+x = 975
+
+[POINT 10]
+y = 429.452
+x = 950
+
+[POINT 12]
+y = 1434.783
+x = 1000
+
+[SENSOR]
+name = Resistance
+unit = KOhms
+description = Calculates raw resistance of the sensor
+

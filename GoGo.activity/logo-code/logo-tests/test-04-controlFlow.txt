@@ -1,0 +1,8 @@
+to controlFlow
+    forever [
+      repeat 5 [ if sensor1 < 100 [beep]
+                     ifelse sensor1 < 100 [ beep ] [ ledon ]
+                     waituntil [ sensor1 < 100 ]
+                   ]
+]
+end

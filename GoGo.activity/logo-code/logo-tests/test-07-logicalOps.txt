@@ -1,0 +1,3 @@
+to testLogic
+  if not sensor1 < 500 and sensor2 > 500 or sensor3 < 500 [beep]
+end

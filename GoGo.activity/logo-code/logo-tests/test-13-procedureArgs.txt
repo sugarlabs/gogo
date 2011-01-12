@@ -1,0 +1,7 @@
+to main
+  repeat dosum 2 3 [ beep wait 2]
+end
+
+to dosum :a :b
+   output :a + :b
+end

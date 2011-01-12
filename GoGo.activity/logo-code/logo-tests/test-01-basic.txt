@@ -1,0 +1,3 @@
+to basicTest
+    repeat 5 [ beep wait 10 ]
+end

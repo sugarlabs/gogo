@@ -1,0 +1,10 @@
+to testSensors
+   if sensor1 < 500 [ beep ]
+   if sensor2 < 500 [ beep ]
+   if sensor3 < 500 [ beep ]
+   if sensor4 < 500 [ beep ]
+   if sensor5 < 500 [ beep ]
+   if sensor6 < 500 [ beep ]
+   if sensor7 < 500 [ beep ]
+   if sensor8 < 500 [ beep ]
+end
