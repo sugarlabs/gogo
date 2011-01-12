@@ -174,7 +174,7 @@ class Serial(SerialBase):
             self.fd = os.open(self.portstr, os.O_RDWR|os.O_NOCTTY|os.O_NONBLOCK)
         except Exception, msg:
             self.fd = None
-            raise SerialException(_("could not open port %(port)s: %(msg)s") % {'port': self._port, 'msg': msg))
+            raise SerialException(_("could not open port %(port)s: %(msg)s") % {'port': self._port, 'msg': msg})
         #~ fcntl.fcntl(self.fd, FCNTL.F_SETFL, 0)  #set blocking
         
         try:
