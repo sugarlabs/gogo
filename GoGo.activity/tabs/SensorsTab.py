@@ -401,7 +401,7 @@ class SensorsTab(Tab):
                 else:
                     #print _("São necessários ao menos 2 pontos.")
                     #print _("It takes at least two points!")
-                    self.showInfo(_("It takes at least two points!"), self.gui.get_widget('mainWindow'))
+                    self.showInfo(_("At least two points required!"), self.gui.get_widget('mainWindow'))
                 self.writeSensorsConfig()
     
     
@@ -416,7 +416,7 @@ class SensorsTab(Tab):
 #                y += [self.sensorTypes[sensorNumber].get_new_value(i)]
 #            self.graphTest(zip(x,y))
             
-            self.graphDraw([tuple(v) for v in self.sensorTypes[sensorNumber].points])
+            self.drawGraph([tuple(v) for v in self.sensorTypes[sensorNumber].points])
         else:
             self.drawGraph([])
             
