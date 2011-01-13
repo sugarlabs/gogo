@@ -200,7 +200,7 @@ class UploadTab(Tab):
     def notebookDataView_switch_page_cb(self,widget,page,page_num):
         self.graphVisible = page_num == 1
         if self.graphVisible:
-            self.refreshGraphic()
+            self.refreshGraph()
             
         
     def getSelectedSensors(self):
@@ -321,12 +321,6 @@ class UploadTab(Tab):
         
         self.getSensorHeaders()
         
-        # Discrete steps until final choice made between textview or treeview 
-        # 1. Split into lists of columns
-        # 2. Apply input functions ("mappedData", preserve!)
-        # 3. Format into string columns for display
-        # 4. Format into csv for saving
-        
         nCols = self.spinbuttonColumns.get_value_as_int()
         if nCols == 1:
             self.colDataRaw = [self.data]
@@ -336,41 +330,41 @@ class UploadTab(Tab):
         self.textviewBuffer.set_text(self.dataFormattedForDisplay())
         
         self.graphUpdateRequired = True
-        self.refreshGraphic()
+        self.refreshGraph()
         
     
-    def refreshGraphic(self):
-        if self.graphContainer == None:
-            self.graph = self.gui.get_widget("dataGraphArea")
-            if self.graph.window == None: return # Tmp fudge, not created yet
-            self.graphWidth, self.graphHeight = self.graph.window.get_size()
-            self.graphContainer = self.graph.get_parent()
-            self.graphContainer.remove(self.graph)
-            self.graph = None
-            self.graphUpdateRequired = True
-            
+    def refreshGraph(self):
         if not (self.graphVisible and self.graphUpdateRequired): return
         
+        if self.graphContainer == None:
+            self.graphContainer = self.gui.get_widget("dataGraphContainer")
+            if self.graphContainer == None: return
+            r = self.graphContainer.get_allocation()
+            self.graphWidth, self.graphHeight = (r.width,r.height)
+            self.graph = None
+            
         data = {}
         for c,t in enumerate(self.colDataMapped):
-            lbl = '%i-%s (%s)' % (c, self.hdrs[c][0], self.hdrs[c][1])
+            lbl = '%(colNum)i-%(name)s (%(units)s)' % \
+                {'colNum': c, 'name': self.hdrs[c][0], 'units': self.hdrs[c][1]}
             data[lbl] = t
         
-        self.graphDraw(data,[str(x) for x in range(len(self.colDataMapped[0]))])
+        self.drawGraph(data,[str(x) for x in range(len(self.colDataMapped[0]))])
         self.graphUpdateRequired = False
         
-        
-    def graphDraw(self, data=[], xLabels=[]):
-        if data == []: return
+
+    def drawGraph(self, data=[], xLabels=[]):
+        if data == {}: return
         
         if self.graph != None:
             self.graphContainer.remove(self.graph.handler)
-
+        
         self.graph = plots.DotLinePlot('gtk', data=data, x_labels=xLabels,
                 width=self.graphWidth, height=self.graphHeight, background="white",
                 border=5, axis=True, grid=True, series_legend = True)
+        
         self.graphContainer.add(self.graph.handler)
-        self.graphContainer.show_all()
+        self.graph.handler.show()
         
         
     def uploadProgress_cb(self, count, total):

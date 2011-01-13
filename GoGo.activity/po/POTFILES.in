@@ -1,28 +1,24 @@
-#[encoding: UTF-8]
-GoGoActivity.py
-setup.py
+encoding: UTF-8
 monitor.py
-compiler-test.py
-py-docstring-test.py
-activity/activity.info
+GoGoActivity.py
+power/__init__.py
+power/power.py
 cairoplot/__init__.py
 cairoplot/handlers.py
 cairoplot/plots.py
 cairoplot/series.py
-gui/monitor.glade
 tabs/__init__.py
 tabs/ConsoleTab.py
 tabs/ProceduresTab.py
 tabs/ConfigTab.py
 tabs/SensorsTab.py
+tabs/UploadTab.py
 tabs/Tab.py
 tabs/kiwi/__init__.py
 tabs/kiwi/tasklet.py
 serial/__init__.py
 serial/serialposix.py
 serial/serialutil.py
-power/__init__.py
-power/power.py
 pyLogoCompiler/__init__.py
 pyLogoCompiler/pyLex.py
 pyLogoCompiler/pyYacc.py

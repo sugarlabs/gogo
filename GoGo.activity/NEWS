@@ -1,3 +1,11 @@
+2
+- Removed UI place-holders for graphs, no longer required
+- Upload Tab: data graph now displays when "Graph" tab selected 
+- Sensor Tab: 
+-- New pop-up warning when attempting to remove remaining two points
+-- Graph deleted when selected Sensor removed
+- Added "README" to explain steps required for building new version 
+
 1
 Initial version for Sugar
 NB: user "olpc" must be a member of "dialout" group...

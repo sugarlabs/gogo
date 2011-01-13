@@ -219,7 +219,7 @@ class SensorsTab(Tab):
         
         for point in points:
             self.liststoreSensors.append([str(point[0]),str(point[1])])
-        self.refreshGraphic()
+        self.refreshGraph()
     
     
     def buttonAddSensor_clicked_cb(self,widget):
@@ -237,6 +237,7 @@ class SensorsTab(Tab):
             self.sensorTypes.pop(int(treemodel.get_path(treeiter)[0]))
             treemodel.remove(treeiter)
             self.writeSensorsConfig()
+        self.refreshGraph()
     
     
     def buttonImportSensors_clicked_cb(self,widget):
@@ -399,11 +400,12 @@ class SensorsTab(Tab):
                     treemodelSensor.remove(treeiterSensor)
                 else:
                     #print _("São necessários ao menos 2 pontos.")
-                    print _("It takes at least two points!")
+                    #print _("It takes at least two points!")
+                    self.showInfo(_("It takes at least two points!"), self.gui.get_widget('mainWindow'))
                 self.writeSensorsConfig()
     
     
-    def refreshGraphic(self):
+    def refreshGraph(self):
         treemodel,treeiter = self.treeviewSensors.get_selection().get_selected()
                 
         if treeiter:
@@ -414,31 +416,24 @@ class SensorsTab(Tab):
 #                y += [self.sensorTypes[sensorNumber].get_new_value(i)]
 #            self.graphTest(zip(x,y))
             
-            self.graphDraw("sensor", False,
-                           [tuple(v) for v in self.sensorTypes[sensorNumber].points])
+            self.graphDraw([tuple(v) for v in self.sensorTypes[sensorNumber].points])
+        else:
+            self.drawGraph([])
             
-            #self.drawingareaGraphic
-            #fig = figure(1)
-            #ax=axes(autoscale_on=True)
-            ##a = fig.add_subplot(111)
-            #del self.ax.lines[0]
-            #self.ax.plot(x, y)
-            #savefig(GRAPHIC_FILENAME)
-            #del ax.lines[0]
-            #graphicPixbuf=gtk.gdk.pixbuf_new_from_file_at_size(GRAPHIC_FILENAME, 300, 200)
-            #self.imageGraphic.set_from_pixbuf(graphicPixbuf)
-            
-    def graphDraw(self, typeString, showLegend=False, data=[]):
-        if data == []: return
+    
+    def drawGraph(self, data=[]):
+        if data == []: 
+            if self.graph != None:
+                self.graphContainer.remove(self.graph.handler)
+            return
         
         if self.graphContainer == None:
-            self.graph = self.gui.get_widget(typeString + "GraphArea")
-            if self.graph.window == None: return # Tmp fudge, not created yet
-            self.graphWidth, self.graphHeight = self.graph.window.get_size()
-            self.graphContainer = self.graph.get_parent()
-            self.graphContainer.remove(self.graph)
+            self.graphContainer = self.gui.get_widget("sensorGraphContainer")
+            if self.graphContainer == None: return
+            r = self.graphContainer.get_allocation()
+            self.graphWidth, self.graphHeight = (r.width,r.height)
             self.graph = None
-            
+
         if self.graph != None:
             self.graphContainer.remove(self.graph.handler)
 

@@ -2443,9 +2443,7 @@
                               <widget class="GtkAlignment" id="dataGraphContainer">
                                 <property name="visible">True</property>
                                 <child>
-                                  <widget class="GtkDrawingArea" id="dataGraphArea">
-                                    <property name="visible">True</property>
-                                  </widget>
+                                  <placeholder/>
                                 </child>
                               </widget>
                               <packing>
@@ -2806,9 +2804,7 @@
                                   <widget class="GtkAlignment" id="sensorGraphContainer">
                                     <property name="visible">True</property>
                                     <child>
-                                      <widget class="GtkDrawingArea" id="sensorGraphArea">
-                                        <property name="visible">True</property>
-                                      </widget>
+                                      <placeholder/>
                                     </child>
                                   </widget>
                                   <packing>
