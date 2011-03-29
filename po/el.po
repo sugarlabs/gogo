@@ -1,0 +1,555 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-13 16:03+0000\n"
+"PO-Revision-Date: 2011-02-28 00:00+0200\n"
+"Last-Translator: John Sarlis <sarlis@sch.gr>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.1\n"
+
+#: activity/activity.info:2
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:35
+msgid "GoGo"
+msgstr "Ο Γκόγκο"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
+msgid "You do not have the required version of GTK + and / or PyGTK installed."
+msgstr "Δεν έχεις την απαραίτητη έκδοση GTK+ και / ή PyGTK εγκατεστημένη"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
+#, python-format
+msgid "The installed version of GTK+ is: %s"
+msgstr "Η εγκατεστημένη έκδοση του GTK+ είναι: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
+msgid "The version of GTK + is required: 2.8.0 or newer\n"
+msgstr "Η έκδοση του GTK+ που απαιτείται: 2.8.0 ή νεώτερη\n"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
+#, python-format
+msgid "The version of PyGTK installed is: %s"
+msgstr "Η έκδοση του PyGTK που εγκαταστάθηκε είναι: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
+msgid "The version of PyGTK is required: 2.8.0 or newer\n"
+msgstr "Η έκδοση του PyGTK που απαιτείται: 2.8.0 ή νεώτερη\n"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
+msgid "PyGTK 2.8.0 or newer is required."
+msgstr "Απαιτείται έκδοση του PyGTK 2.8.0 ή νεώτερη."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
+msgid "There was no version of PyGTK found on your system."
+msgstr "Δε βρέθηκε η έκδοση του PyGTK στο σύστημα σου."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
+msgid "pySerial needs to be installed:"
+msgstr "Το PySerial χρειάζεται να εγκατασταθεί:"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
+msgid "Board Monitor"
+msgstr "Παρακολούθηση της Πίστας"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
+msgid "Version "
+msgstr "Έκδοση "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
+msgid "Kiwi needs to be installed:"
+msgstr "Το Kiwi πρέπει να εγκατασταθεί:"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
+msgid "Gogo disconnected"
+msgstr "Ο Γκόγκο αποσυνδέθηκε"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
+msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
+msgstr "<b><span size='xx-large'>Ο Γκόγκο Αποσυνδέθηκε</span></b>"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
+msgid "Misc"
+msgstr "Λοιπά"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
+msgid "Beep"
+msgstr "Μπίπ"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
+msgid "LED On"
+msgstr "LED Ανοιχτό"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
+msgid "LED Off"
+msgstr "LED Κλειστό"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid "Motor"
+msgstr "Μηχανή"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
+msgid "Controlling motors: "
+msgstr "Έλεγχος μηχανών: "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid "Motors "
+msgstr "Μηχανές "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+msgid " On"
+msgstr " Ανοιχτό"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+msgid " Off"
+msgstr " Κλειστό"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+msgid " Brake"
+msgstr " Φρένο"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+msgid " Coast"
+msgstr " Περιοχή"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+msgid "Power of Motors "
+msgstr "Δύναμη των Μηχανών "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+msgid " set to "
+msgstr " θέσε σε "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+msgid " this way"
+msgstr " προς αυτή την κατεύθυνση"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+msgid " that way"
+msgstr " προς την άλλη κατεύθυνση"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+msgid " reversed"
+msgstr " όπισθεν"
+
+# http://en.wikipedia.org/wiki/File:PWM_duty_cycle_with_label.gif
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid " PwmDuty: "
+msgstr " Παλμική Διαμόρφωση Πλάτους: "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
+msgid "Sensor"
+msgstr "Αισθητήτρας"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
+msgid "All sensor readings refreshed"
+msgstr "Όλες οι ενδείξεις των μετρητών ανανεώθηκαν"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
+msgid "Reading sensors at 20hz"
+msgstr "Διάβασμα αισθητήρων στα 20hz"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
+msgid "Reading sensors at a 5hz"
+msgstr "Διάβασμα αισθητήρων στα 5hz"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
+msgid "Burst mode off"
+msgstr "Έξοδος από τη μονόδρομη μετάδοση"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
+msgid "GTK+ Runtime Enviroment needs to be installed:"
+msgstr "Το περιβάλλον εργασίας GTK+ πρέπει να εγκατασταθεί:"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
+msgid "Open.."
+msgstr "Άνοιγμα.."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:129
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:313
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:348
+msgid "Save.."
+msgstr "Αποθήκευση.."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
+msgid "Save As.."
+msgstr "Αποθήκευση Ως.."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
+msgid "Error/s: Check Messages"
+msgstr "Λάθη: Ελέγξτε τα Μηνύματα"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
+msgid "Code successfully compiled."
+msgstr "Ο κώδικας μεταφράστηκε επιτυχώς."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
+msgid "Check GoGo plugged in, turned on and connected"
+msgstr ""
+"Ελέγξτε αν ο Γκογκο τροφοδοτείται με ρεύμα, είναι ανοιχτός και συνδεμένος"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
+msgid "Error communicating"
+msgstr "Λάθος στην επικοινωνία"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
+msgid "Code successfully downloaded."
+msgstr "Ο κώδικας φορτώθηκε επιτυχώς."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
+#, python-format
+msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
+msgstr ""
+"<b><span size=\"xx-large\">Δραστηριότητα Γκόγκο</span></b> (έκδ. %(version)s)"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
+msgid "Gogo connected to the COM port "
+msgstr "Ο Γκόγκο συνδέθηκε στη θύρα COM "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
+msgid "Gogo connected on port "
+msgstr "Ο Γκόγκο συνδέθηκε στη θύρα "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
+msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
+msgstr "<b><span size='xx-large'>Ο Γκόγκο Συνδέθηκε</span></b>"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:84
+msgid ""
+"There were problems with the connection. Make sure the GoGo Board is "
+"properly connected."
+msgstr ""
+"Υπάρχουν προβλήματα με τη σύνδεση. Σιγουρευτείτε ότι η Πίστα του Γκόγκο "
+"είναι συνδεμένη σωστά,"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:137
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:148
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:181
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:372
+#, python-format
+msgid "%i Values Uploaded"
+msgstr "%i Τιμές Φορτώθηκαν"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:150
+msgid "Data successfully uploaded."
+msgstr "Τα δεδομένα φορτώθηκαν επιτυχώς."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:65
+msgid "Sensor configuration file corrupted or empty."
+msgstr "Το αρχείο ρυθμίσεων αισθητήρων έχει καταστραφεί ή είναι άδειο."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:71
+msgid "Sensor configuration file does not exist."
+msgstr "Το αρχείο ρυθμίσεων αισθητήρων δεν υπάρχει."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:110
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Name"
+msgstr "Όνομα"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:111
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Unit"
+msgstr "Μονάδα"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:112
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Description"
+msgstr "Περιγραφή"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
+msgid "X"
+msgstr "Χ"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
+msgid "Y"
+msgstr "Ψ"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:149
+msgid "Standard"
+msgstr "Κανονική"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
+msgid "The light value should be between 0 and 1023"
+msgstr "Η τιμή φωτός πρέπει να είναι μεταξύ 0 και 1023"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
+msgid "Point already exists."
+msgstr "Το σημείο υπάρχει ήδη."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
+msgid "Point already exists!"
+msgstr "Το σημείο υπάρχει ήδη!"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:205
+#, python-format
+msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
+msgstr "<b>Σημεία Αισθητήρων: </b>%(name)s (%(units)s)"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
+msgid "raw"
+msgstr "ακατέργαστα"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
+#, python-format
+msgid "Error: unrecognised file type: %s"
+msgstr "Λάθος: δεν αναγνωρίζεται ο τύπος αρχείου: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
+msgid "At least two points required!"
+msgstr "Χρειάζονται τουλάχιστον δύο σημεία!"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
+msgid "Error in automatic pm argument, use on/off."
+msgstr "Λάθος στην αυτόματη ρύθμιση pm, χρησιμοποιείστε ανοιχτό/κλειστό."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/__init__.py:15
+#, python-format
+#, python-format, ,
+msgid "Sorry: no implementation for your platform ('%s') available"
+msgstr "Λάθος: δεν υπάρχει διαθέσιμη τεκμηρίωση για την πλατφόρμα σας ('%s')"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:170
+msgid "Port must be configured before it can be used."
+msgstr "Η θύρα πρέπει να ρυθμιστεί πριν χρησιμοποιηθεί."
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:177
+#, python-format
+msgid "could not open port %(port)s: %(msg)s"
+msgstr "Δεν μπόρεσα να ανοίξω τη θύρα %(port)s: %(msg)s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:193
+msgid "Can only operate on a valid port handle"
+msgstr "Μπορώ να λειτουργήσω μόνο με ένα έγκυρο αναγνωριστικό θύρας"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:199
+#, python-format
+msgid "Could not configure port: %s"
+msgstr "Δε μπορώ να ρυθίσω τη θύρα: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
+#, python-format
+msgid "Invalid baud rate: %r"
+msgstr "Μη έγκυρος ρυθμός μετάδοσης: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
+#, python-format
+msgid "Invalid char len: %r"
+msgstr "Μη έγκυρο μήκος χαρακτήρων: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:241
+#, python-format
+msgid "Invalid stopit specification: %r"
+msgstr "Μη έγκυρος ορισμός του bit σταματήματος: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
+#, python-format
+msgid "Invalid parity: %r"
+msgstr "Μη έγκυρη ισοτιμία: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
+#, python-format
+msgid "Invalid vmin: %r "
+msgstr "Μή έγκυρη μ.ελαχ.: %r "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:285
+#, python-format
+msgid "Invalid vtime: %r"
+msgstr "Μή έγκυρη μ.χρον.: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:332
+#, python-format
+msgid "expected str, got %s"
+msgstr "αναμένεται συμβολοσειρά, λήφθηκε %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
+msgid "Serial port MUST have enabled timeout for this function!"
+msgstr ""
+"Η σειριακή θύρα ΠΡΕΠΕΙ να έχει ενεργοποιημένο όριο χρόνου γι' αυτή την "
+"λειτουργία!"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
+#, python-format
+msgid "Not a valid baudrate: %r"
+msgstr "Μη έγκυρος ρυθμός μετάδοσης: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
+#, python-format
+msgid "Not a valid byte size: %r"
+msgstr "Μη έγκυρο μέγεθος byte: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
+#, python-format
+msgid "Not a valid parity: %r"
+msgstr "Μη έγκυρη ισοτιμία: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:263
+#, python-format
+msgid "Not a valid stopbit size: %r"
+msgstr "Μη έγκυρο μέγεθος bit σταματήματος: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:277
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:281
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:296
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:300
+#, python-format
+msgid "Not a valid timeout: %r"
+msgstr "Μη έγκυρο όριο χρόνου: %r"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:160
+#, python-format
+msgid "Line X: Undefined: %s"
+msgstr "Γραμμή Χ: Ακαθόριστη: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:190
+#, python-format
+msgid "%s is not a valid number!"
+msgstr "%s δεν είναι έγκυρος αριθμός!"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:231
+#, python-format
+msgid ""
+"Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
+"found."
+msgstr ""
+"Γραμμή %(line)d: Λάθος Ενδεικτικό '%(value)s'. Οι αναφορές σε αυτό το "
+"ενδεικτικό δε βρέθηκαν. "
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:116
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:119
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:143
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:677
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:688
+#, python-format
+msgid "Name not found '%s'"
+msgstr "Το όνομα '%s' δε βρέθηκε"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:400
+msgid "size"
+msgstr "μέγεθος"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
+#, python-format
+msgid "Not identified: %s"
+msgstr "Δεν αναγνωρίστηκε: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:931
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:949
+#, python-format
+msgid "Line %(line)d: Unresolved symbol '%(msg)s'"
+msgstr "Γραμμή %(line)d: Αδιευκρίνηστο σύμβολο '%(msg)s'"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:977
+msgid "Error in last line"
+msgstr "Λάθος στην τελευταία γραμμή"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
+#, python-format
+msgid "Line %(line)d: Syntax Error '%(msg)s'"
+msgstr "Γραμμή %(line)d: Συντακτικό Λάθος '%(msg)s'"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1002
+#, python-format
+msgid "Intermediate Code: %s"
+msgstr "Ενδιάμεσος Κώδικας: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1010
+#, python-format
+msgid "Final Code: %s"
+msgstr "Τελικός Κώδικας: %s"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:196
+msgid "Couldn't determine identifier type"
+msgstr "Δεν ήταν δυνατόν να καθοριστεί ο τύπος αναγνωριστικού"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:204
+msgid "Couldn't determine integer type"
+msgstr "Δεν ήταν δυνατόν να καθοριστεί ο τύπος ακεραίου"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
+msgid "Couldn't determine string type"
+msgstr "Δεν ήταν δυνατόν να καθοριστεί ο τύπος αλφαριθμητικού"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
+msgid "Couldn't determine token for newlines"
+msgstr "Δεν ήταν δυνατόν να καθοριστεί το ενδεικτικό για νέες γραμμές"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
+#, python-format
+msgid "Unable to lex '%s' required for preprocessor"
+msgstr "Δε βρέθηκε στο λεξικό το '%s' που απαιτείται από τον προ-επεξεργαστή"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
+msgid "Malformed #include <...>"
+msgstr "Άκυρη σύνταξη στο #include <...>"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:748
+msgid "Malformed #include statement"
+msgstr "Άκυρη σύνταξη στο ορισμό του #include"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
+#, python-format
+msgid "Couldn't find '%s'"
+msgstr "Δεν μπορώ να βρω το '%s'"
+
+# variadic function : συνάρτηση με μεταβλητό πλήθος ορισμάτων
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
+msgid "No more arguments may follow a variadic argument"
+msgstr "Δε πρέπει να ακολουθούν άλλα ορίσματα πίσω από μεταβλητή παράμετρο"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:816
+msgid "Invalid macro argument"
+msgstr "Άκυρη παράμετρος μακροεντολής"
+
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:833
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:835
+msgid "Bad macro definition"
+msgstr "Άσχημος ορισμός μακροεντολής"
