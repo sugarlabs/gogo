@@ -3,8 +3,9 @@
 # Remove dynamically created files
 
 PWD=`pwd`
-if [ "`basename $PWD`" != "GoGo.activity" ] ; then
-    echo "*** ONLY RUN IN DIRECTORY: GoGo.activity"
+#if [ "`basename $PWD`" != "GoGo.activity" ] ; then
+if [ ! -f "GoGoActivity.py" ] ; then
+    echo "*** ONLY RUN IN ACTIVITY DIRECTORY"
     exit -1
 fi
 
