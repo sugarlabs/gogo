@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-28 18:18+0200\n"
+"POT-Creation-Date: 2011-01-13 16:03+0000\n"
 "PO-Revision-Date: 2011-02-10 07:43+0200\n"
 "Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,366 +18,531 @@ msgstr ""
 "X-Generator: Translate Toolkit 1.6.0\n"
 
 #: activity/activity.info:2
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:35
 msgid "GoGo"
 msgstr "GoGo"
 
-#~ msgid "You do not have the required version of GTK + and / or PyGTK installed."
-#~ msgstr "You do not have the required version of GTK + and / or PyGTK installed."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
+msgid "You do not have the required version of GTK + and / or PyGTK installed."
+msgstr "You do not have the required version of GTK + and / or PyGTK installed."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
 #, python-format
-#~ msgid "The installed version of GTK+ is: %s"
-#~ msgstr "The installed version of GTK+ is: %s"
+msgid "The installed version of GTK+ is: %s"
+msgstr "The installed version of GTK+ is: %s"
 
-#~ msgid "The version of GTK + is required: 2.8.0 or newer\n"
-#~ msgstr "The version of GTK + is required: 2.8.0 or newer\n"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
+msgid "The version of GTK + is required: 2.8.0 or newer\n"
+msgstr "The version of GTK + is required: 2.8.0 or newer\n"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
-#~ msgid "The version of PyGTK installed is: %s"
-#~ msgstr "The version of PyGTK installed is: %s"
+msgid "The version of PyGTK installed is: %s"
+msgstr "The version of PyGTK installed is: %s"
 
-#~ msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-#~ msgstr "The version of PyGTK is required: 2.8.0 or newer\n"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
+msgid "The version of PyGTK is required: 2.8.0 or newer\n"
+msgstr "The version of PyGTK is required: 2.8.0 or newer\n"
 
-#~ msgid "PyGTK 2.8.0 or newer is required."
-#~ msgstr "PyGTK 2.8.0 or newer is required."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
+msgid "PyGTK 2.8.0 or newer is required."
+msgstr "PyGTK 2.8.0 or newer is required."
 
-#~ msgid "There was no version of PyGTK found on your system."
-#~ msgstr "There was no version of PyGTK found on your system."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
+msgid "There was no version of PyGTK found on your system."
+msgstr "There was no version of PyGTK found on your system."
 
-#~ msgid "pySerial needs to be installed:"
-#~ msgstr "pySerial needs to be installed:"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
+msgid "pySerial needs to be installed:"
+msgstr "pySerial needs to be installed:"
 
-#~ msgid "Board Monitor"
-#~ msgstr "Board Monitor"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
+msgid "Board Monitor"
+msgstr "Board Monitor"
 
-#~ msgid "Version "
-#~ msgstr "Version "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
+msgid "Version "
+msgstr "Version "
 
-#~ msgid "Kiwi needs to be installed:"
-#~ msgstr "Kiwi needs to be installed:"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
+msgid "Kiwi needs to be installed:"
+msgstr "Kiwi needs to be installed:"
 
-#~ msgid "Gogo disconnected"
-#~ msgstr "Gogo disconnected"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
+msgid "Gogo disconnected"
+msgstr "Gogo disconnected"
 
-#~ msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
-#~ msgstr "<b><span size='xx-large'>Gogo Disconnected</span></b>"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
+msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
+msgstr "<b><span size='xx-large'>Gogo Disconnected</span></b>"
 
-#~ msgid "Misc"
-#~ msgstr "Misc"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
+msgid "Misc"
+msgstr "Misc"
 
-#~ msgid "Beep"
-#~ msgstr "Beep"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
+msgid "Beep"
+msgstr "Beep"
 
-#~ msgid "LED On"
-#~ msgstr "LED On"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
+msgid "LED On"
+msgstr "LED On"
 
-#~ msgid "LED Off"
-#~ msgstr "LED Off"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
+msgid "LED Off"
+msgstr "LED Off"
 
-#~ msgid "Motor"
-#~ msgstr "Motor"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid "Motor"
+msgstr "Motor"
 
-#~ msgid "Controlling motors: "
-#~ msgstr "Controlling motors: "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
+msgid "Controlling motors: "
+msgstr "Controlling motors: "
 
-#~ msgid "Motors "
-#~ msgstr "Motors "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid "Motors "
+msgstr "Motors "
 
-#~ msgid " On"
-#~ msgstr " On"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
+msgid " On"
+msgstr " On"
 
-#~ msgid " Off"
-#~ msgstr " Off"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
+msgid " Off"
+msgstr " Off"
 
-#~ msgid " Brake"
-#~ msgstr " Brake"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
+msgid " Brake"
+msgstr " Brake"
 
-#~ msgid " Coast"
-#~ msgstr " Coast"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
+msgid " Coast"
+msgstr " Coast"
 
-#~ msgid "Power of Motors "
-#~ msgstr "Power of Motors "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+msgid "Power of Motors "
+msgstr "Power of Motors "
 
-#~ msgid " set to "
-#~ msgstr " set to "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
+msgid " set to "
+msgstr " set to "
 
-#~ msgid " this way"
-#~ msgstr " this way"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
+msgid " this way"
+msgstr " this way"
 
-#~ msgid " that way"
-#~ msgstr " that way"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
+msgid " that way"
+msgstr " that way"
 
-#~ msgid " reversed"
-#~ msgstr " reversed"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
+msgid " reversed"
+msgstr " reversed"
 
-#~ msgid " PwmDuty: "
-#~ msgstr " PwmDuty: "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
+msgid " PwmDuty: "
+msgstr " PwmDuty: "
 
-#~ msgid "Sensor"
-#~ msgstr "Sensor"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
+msgid "Sensor"
+msgstr "Sensor"
 
-#~ msgid "All sensor readings refreshed"
-#~ msgstr "All sensor readings refreshed"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
+msgid "All sensor readings refreshed"
+msgstr "All sensor readings refreshed"
 
-#~ msgid "Reading sensors at 20hz"
-#~ msgstr "Reading sensors at 20hz"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
+msgid "Reading sensors at 20hz"
+msgstr "Reading sensors at 20hz"
 
-#~ msgid "Reading sensors at a 5hz"
-#~ msgstr "Reading sensors at a 5hz"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
+msgid "Reading sensors at a 5hz"
+msgstr "Reading sensors at a 5hz"
 
-#~ msgid "Burst mode off"
-#~ msgstr "Burst mode off"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
+msgid "Burst mode off"
+msgstr "Burst mode off"
 
-#~ msgid "GTK+ Runtime Enviroment needs to be installed:"
-#~ msgstr "GTK+ Runtime Enviroment needs to be installed:"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
+msgid "GTK+ Runtime Enviroment needs to be installed:"
+msgstr "GTK+ Runtime Enviroment needs to be installed:"
 
-#~ msgid "Open.."
-#~ msgstr "Open.."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
+msgid "Open.."
+msgstr "Open.."
 
-#~ msgid "Save.."
-#~ msgstr "Save.."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:129
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:313
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:348
+msgid "Save.."
+msgstr "Save.."
 
-#~ msgid "Save As.."
-#~ msgstr "Save As.."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
+msgid "Save As.."
+msgstr "Save As.."
 
-#~ msgid "Error/s: Check Messages"
-#~ msgstr "Error/s: Check Messages"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
+msgid "Error/s: Check Messages"
+msgstr "Error/s: Check Messages"
 
-#~ msgid "Code successfully compiled."
-#~ msgstr "Code successfully compiled."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
+msgid "Code successfully compiled."
+msgstr "Code successfully compiled."
 
-#~ msgid "Check GoGo plugged in, turned on and connected"
-#~ msgstr "Check GoGo plugged in, turned on and connected"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
+msgid "Check GoGo plugged in, turned on and connected"
+msgstr "Check GoGo plugged in, turned on and connected"
 
-#~ msgid "Error communicating"
-#~ msgstr "Error communicating"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
+msgid "Error communicating"
+msgstr "Error communicating"
 
-#~ msgid "Code successfully downloaded."
-#~ msgstr "Code successfully downloaded."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
+msgid "Code successfully downloaded."
+msgstr "Code successfully downloaded."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
-#~ msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
-#~ msgstr "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
+msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
+msgstr "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
 
-#~ msgid "Gogo connected to the COM port "
-#~ msgstr "Gogo connected to the COM port "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
+msgid "Gogo connected to the COM port "
+msgstr "Gogo connected to the COM port "
 
-#~ msgid "Gogo connected on port "
-#~ msgstr "Gogo connected on port "
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
+msgid "Gogo connected on port "
+msgstr "Gogo connected on port "
 
-#~ msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
-#~ msgstr "<b><span size='xx-large'>GoGo Connected</span></b>"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
+msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
+msgstr "<b><span size='xx-large'>GoGo Connected</span></b>"
 
-#~ msgid ""
-#~ "There were problems with the connection. Make sure the GoGo Board is "
-#~ "properly connected."
-#~ msgstr ""
-#~ "There were problems with the connection. Make sure the GoGo Board is "
-#~ "properly connected."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:84
+msgid ""
+"There were problems with the connection. Make sure the GoGo Board is "
+"properly connected."
+msgstr ""
+"There were problems with the connection. Make sure the GoGo Board is "
+"properly connected."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:137
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:148
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:181
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:372
 #, python-format
-#~ msgid "%i Values Uploaded"
-#~ msgstr "%i Values Uploaded"
+msgid "%i Values Uploaded"
+msgstr "%i Values Uploaded"
 
-#~ msgid "Data successfully uploaded."
-#~ msgstr "Data successfully uploaded."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:150
+msgid "Data successfully uploaded."
+msgstr "Data successfully uploaded."
 
-#~ msgid "Sensor configuration file corrupted or empty."
-#~ msgstr "Sensor configuration file corrupted or empty."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:65
+msgid "Sensor configuration file corrupted or empty."
+msgstr "Sensor configuration file corrupted or empty."
 
-#~ msgid "Sensor configuration file does not exist."
-#~ msgstr "Sensor configuration file does not exist."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:71
+msgid "Sensor configuration file does not exist."
+msgstr "Sensor configuration file does not exist."
 
-#~ msgid "Name"
-#~ msgstr "Name"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:110
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Name"
+msgstr "Name"
 
-#~ msgid "Unit"
-#~ msgstr "Unit"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:111
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Unit"
+msgstr "Unit"
 
-#~ msgid "Description"
-#~ msgstr "Description"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:112
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
+msgid "Description"
+msgstr "Description"
 
-#~ msgid "X"
-#~ msgstr "X"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
+msgid "X"
+msgstr "X"
 
-#~ msgid "Y"
-#~ msgstr "Y"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
+msgid "Y"
+msgstr "Y"
 
-#~ msgid "Standard"
-#~ msgstr "Standard"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:149
+msgid "Standard"
+msgstr "Standard"
 
-#~ msgid "The light value should be between 0 and 1023"
-#~ msgstr "The light value should be between 0 and 1023"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
+msgid "The light value should be between 0 and 1023"
+msgstr "The light value should be between 0 and 1023"
 
-#~ msgid "Point already exists."
-#~ msgstr "Point already exists."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
+msgid "Point already exists."
+msgstr "Point already exists."
 
-#~ msgid "Point already exists!"
-#~ msgstr "Point already exists!"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
+msgid "Point already exists!"
+msgstr "Point already exists!"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:205
 #, python-format
-#~ msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
-#~ msgstr "<b>Sensor Points: </b>%(name)s (%(units)s)"
+msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
+msgstr "<b>Sensor Points: </b>%(name)s (%(units)s)"
 
-#~ msgid "raw"
-#~ msgstr "raw"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
+msgid "raw"
+msgstr "raw"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
-#~ msgid "Error: unrecognised file type: %s"
-#~ msgstr "Error: unrecognised file type: %s"
+msgid "Error: unrecognised file type: %s"
+msgstr "Error: unrecognised file type: %s"
 
-#~ msgid "At least two points required!"
-#~ msgstr "At least two points required!"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
+msgid "At least two points required!"
+msgstr "At least two points required!"
 
-#~ msgid "Error in automatic pm argument, use on/off."
-#~ msgstr "Error in automatic pm argument, use on/off."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
+msgid "Error in automatic pm argument, use on/off."
+msgstr "Error in automatic pm argument, use on/off."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/__init__.py:15
 #, python-format
-#~ msgid "Sorry: no implementation for your platform ('%s') available"
-#~ msgstr "Sorry: no implementation for your platform ('%s') available"
+msgid "Sorry: no implementation for your platform ('%s') available"
+msgstr "Sorry: no implementation for your platform ('%s') available"
 
-#~ msgid "Port must be configured before it can be used."
-#~ msgstr "Port must be configured before it can be used."
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:170
+msgid "Port must be configured before it can be used."
+msgstr "Port must be configured before it can be used."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:177
 #, python-format
-#~ msgid "could not open port %(port)s: %(msg)s"
-#~ msgstr "could not open port %(port)s: %(msg)s"
+msgid "could not open port %(port)s: %(msg)s"
+msgstr "could not open port %(port)s: %(msg)s"
 
-#~ msgid "Can only operate on a valid port handle"
-#~ msgstr "Can only operate on a valid port handle"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:193
+msgid "Can only operate on a valid port handle"
+msgstr "Can only operate on a valid port handle"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:199
 #, python-format
-#~ msgid "Could not configure port: %s"
-#~ msgstr "Could not configure port: %s"
+msgid "Could not configure port: %s"
+msgstr "Could not configure port: %s"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
 #, python-format
-#~ msgid "Invalid baud rate: %r"
-#~ msgstr "Invalid baud rate: %r"
+msgid "Invalid baud rate: %r"
+msgstr "Invalid baud rate: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
 #, python-format
-#~ msgid "Invalid char len: %r"
-#~ msgstr "Invalid char len: %r"
+msgid "Invalid char len: %r"
+msgstr "Invalid char len: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:241
 #, python-format
-#~ msgid "Invalid stopit specification: %r"
-#~ msgstr "Invalid stopit specification: %r"
+msgid "Invalid stopit specification: %r"
+msgstr "Invalid stopit specification: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
 #, python-format
-#~ msgid "Invalid parity: %r"
-#~ msgstr "Invalid parity: %r"
+msgid "Invalid parity: %r"
+msgstr "Invalid parity: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
 #, python-format
-#~ msgid "Invalid vmin: %r "
-#~ msgstr "Invalid vmin: %r "
+msgid "Invalid vmin: %r "
+msgstr "Invalid vmin: %r "
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:285
 #, python-format
-#~ msgid "Invalid vtime: %r"
-#~ msgstr "Invalid vtime: %r"
+msgid "Invalid vtime: %r"
+msgstr "Invalid vtime: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:332
 #, python-format
-#~ msgid "expected str, got %s"
-#~ msgstr "expected str, got %s"
+msgid "expected str, got %s"
+msgstr "expected str, got %s"
 
-#~ msgid "Serial port MUST have enabled timeout for this function!"
-#~ msgstr "Serial port MUST have enabled timeout for this function!"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
+msgid "Serial port MUST have enabled timeout for this function!"
+msgstr "Serial port MUST have enabled timeout for this function!"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
-#~ msgid "Not a valid baudrate: %r"
-#~ msgstr "Not a valid baudrate: %r"
+msgid "Not a valid baudrate: %r"
+msgstr "Not a valid baudrate: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
 #, python-format
-#~ msgid "Not a valid byte size: %r"
-#~ msgstr "Not a valid byte size: %r"
+msgid "Not a valid byte size: %r"
+msgstr "Not a valid byte size: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
 #, python-format
-#~ msgid "Not a valid parity: %r"
-#~ msgstr "Not a valid parity: %r"
+msgid "Not a valid parity: %r"
+msgstr "Not a valid parity: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:263
 #, python-format
-#~ msgid "Not a valid stopbit size: %r"
-#~ msgstr "Not a valid stopbit size: %r"
+msgid "Not a valid stopbit size: %r"
+msgstr "Not a valid stopbit size: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:277
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:281
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:296
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:300
 #, python-format
-#~ msgid "Not a valid timeout: %r"
-#~ msgstr "Not a valid timeout: %r"
+msgid "Not a valid timeout: %r"
+msgstr "Not a valid timeout: %r"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:160
 #, python-format
-#~ msgid "Line X: Undefined: %s"
-#~ msgstr "Line X: Undefined: %s"
+msgid "Line X: Undefined: %s"
+msgstr "Line X: Undefined: %s"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:190
 #, python-format
-#~ msgid "%s is not a valid number!"
-#~ msgstr "%s is not a valid number!"
+msgid "%s is not a valid number!"
+msgstr "%s is not a valid number!"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:231
 #, python-format
-#~ msgid ""
-#~ "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
-#~ "found."
-#~ msgstr ""
-#~ "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
-#~ "found."
+msgid ""
+"Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
+"found."
+msgstr ""
+"Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
+"found."
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:116
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:119
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:143
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:677
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:688
 #, python-format
-#~ msgid "Name not found '%s'"
-#~ msgstr "Name not found '%s'"
+msgid "Name not found '%s'"
+msgstr "Name not found '%s'"
 
-#~ msgid "size"
-#~ msgstr "size"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:400
+msgid "size"
+msgstr "size"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
 #, python-format
-#~ msgid "Not identified: %s"
-#~ msgstr "Not identified: %s"
+msgid "Not identified: %s"
+msgstr "Not identified: %s"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:931
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:949
 #, python-format
-#~ msgid "Line %(line)d: Unresolved symbol '%(msg)s'"
-#~ msgstr "Line %(line)d: Unresolved symbol '%(msg)s'"
+msgid "Line %(line)d: Unresolved symbol '%(msg)s'"
+msgstr "Line %(line)d: Unresolved symbol '%(msg)s'"
 
-#~ msgid "Error in last line"
-#~ msgstr "Error in last line"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:977
+msgid "Error in last line"
+msgstr "Error in last line"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
 #, python-format
-#~ msgid "Line %(line)d: Syntax Error '%(msg)s'"
-#~ msgstr "Line %(line)d: Syntax Error '%(msg)s'"
+msgid "Line %(line)d: Syntax Error '%(msg)s'"
+msgstr "Line %(line)d: Syntax Error '%(msg)s'"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1002
 #, python-format
-#~ msgid "Intermediate Code: %s"
-#~ msgstr "Intermediate Code: %s"
+msgid "Intermediate Code: %s"
+msgstr "Intermediate Code: %s"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1010
 #, python-format
-#~ msgid "Final Code: %s"
-#~ msgstr "Final Code: %s"
+msgid "Final Code: %s"
+msgstr "Final Code: %s"
 
-#~ msgid "Couldn't determine identifier type"
-#~ msgstr "Couldn't determine identifier type"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:196
+msgid "Couldn't determine identifier type"
+msgstr "Couldn't determine identifier type"
 
-#~ msgid "Couldn't determine integer type"
-#~ msgstr "Couldn't determine integer type"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:204
+msgid "Couldn't determine integer type"
+msgstr "Couldn't determine integer type"
 
-#~ msgid "Couldn't determine string type"
-#~ msgstr "Couldn't determine string type"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
+msgid "Couldn't determine string type"
+msgstr "Couldn't determine string type"
 
-#~ msgid "Couldn't determine token for newlines"
-#~ msgstr "Couldn't determine token for newlines"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
+msgid "Couldn't determine token for newlines"
+msgstr "Couldn't determine token for newlines"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
-#~ msgid "Unable to lex '%s' required for preprocessor"
-#~ msgstr "Unable to lex '%s' required for preprocessor"
+msgid "Unable to lex '%s' required for preprocessor"
+msgstr "Unable to lex '%s' required for preprocessor"
 
-#~ msgid "Malformed #include <...>"
-#~ msgstr "Malformed #include <...>"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
+msgid "Malformed #include <...>"
+msgstr "Malformed #include <...>"
 
-#~ msgid "Malformed #include statement"
-#~ msgstr "Malformed #include statement"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:748
+msgid "Malformed #include statement"
+msgstr "Malformed #include statement"
 
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
 #, python-format
-#~ msgid "Couldn't find '%s'"
-#~ msgstr "Couldn't find '%s'"
+msgid "Couldn't find '%s'"
+msgstr "Couldn't find '%s'"
 
-#~ msgid "No more arguments may follow a variadic argument"
-#~ msgstr "No more arguments may follow a variadic argument"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
+msgid "No more arguments may follow a variadic argument"
+msgstr "No more arguments may follow a variadic argument"
 
-#~ msgid "Invalid macro argument"
-#~ msgstr "Invalid macro argument"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:816
+msgid "Invalid macro argument"
+msgstr "Invalid macro argument"
 
-#~ msgid "Bad macro definition"
-#~ msgstr "Bad macro definition"
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:833
+#: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:835
+msgid "Bad macro definition"
+msgstr "Bad macro definition"
