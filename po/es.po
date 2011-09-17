@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2011-07-10 07:00+0200\n"
-"Last-Translator: Enrique <quique@estudiosdeldesarrollo.net>\n"
+"PO-Revision-Date: 2011-09-17 08:21+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -190,7 +190,7 @@ msgstr " invertido"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid " PwmDuty: "
-msgstr "PwmDuty:"
+msgstr " PwmDuty: "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
@@ -544,9 +544,9 @@ msgstr "No se puede determinar ficha para línea nueva"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
-#, python-format, fuzzy
+#, python-format, 
 msgid "Unable to lex '%s' required for preprocessor"
-msgstr "Imposible to lex '%s' requerido por el procesador"
+msgstr "Imposible de analizar '%s' requerido por el pre-procesador"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
 msgid "Malformed #include <...>"
