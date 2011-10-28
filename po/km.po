@@ -87,8 +87,9 @@ msgid "Misc"
 msgstr "ផ្សេងៗ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
+#, fuzzy
 msgid "Beep"
-msgstr ""
+msgstr "រក្សា"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
@@ -172,8 +173,9 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
+#, fuzzy
 msgid "Sensor"
-msgstr ""
+msgstr "ឧបករណ៍​ចាប់​សញ្ញា"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
@@ -300,7 +302,7 @@ msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
 msgid "Y"
@@ -328,8 +330,9 @@ msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
 msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
+#, fuzzy
 msgid "raw"
-msgstr ""
+msgstr "ស្មើ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
