@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2011-11-29 18:58+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2011-12-22 20:32+0200\n"
+"Last-Translator: Jasmine <udea_jasmine@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hy\n"
 "MIME-Version: 1.0\n"
@@ -55,7 +55,7 @@ msgstr "Ձեր համակարգում PyGTK -ի ոչ մի տարբերակ չգ�
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
 msgid "pySerial needs to be installed:"
-msgstr "անհրաժեշտ է տեղադրել pySerial -ը`"
+msgstr "Անհրաժեշտ է տեղադրել pySerial -ը`"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
 msgid "Board Monitor"
@@ -67,18 +67,18 @@ msgstr "Տարբերակ "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
-msgstr "անհրաժեշտ է տեղադրել Kiwi -ն`"
+msgstr "Անհրաժեշտ է տեղադրել Kiwi -ն`"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
 msgid "Gogo disconnected"
-msgstr "Գոգո -ն անջատված է"
+msgstr "Gogo -ն անջատված է"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
 msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
-msgstr "<b><span size='xx-large'>Գոգո -ն անջատված է</span></b>"
+msgstr "<b><span size='xx-large'>Gogo -ն անջատված է</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
@@ -92,11 +92,11 @@ msgstr "Սուլիչ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
-msgstr "LED -ը ակտիվացված է"
+msgstr "LED -ը միացված է"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "LED Off"
-msgstr "LED -ը պասիվացված է"
+msgstr "LED -ն անջատված է"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
@@ -115,7 +115,7 @@ msgstr "Շարժիչ"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
 msgid "Controlling motors: "
-msgstr "Վերահսկող շարժիչներ` "
+msgstr "Վերահսկող շարժիչներ. "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
@@ -146,7 +146,7 @@ msgstr " Ափ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid "Power of Motors "
-msgstr "Շարժիչների ուժը "
+msgstr "Շարժիչների հզորությունը "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid " set to "
@@ -190,14 +190,14 @@ msgstr "Ընթերցող սենսորները 5հերց"
 # Burst mode - Բարձր արագությամբ փոխանցման ռեժիմ
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Burst mode off"
-msgstr "Բարձր արագությամբ փոխանցման ռեժիմը անջատված է"
+msgstr "Կայծակնային արագությամբ փոխանցման ռեժիմն անջատված է"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
 msgid "GTK+ Runtime Enviroment needs to be installed:"
-msgstr "«GTK+ Runtime Enviroment » ծրագիրը պետք է տեղադրել`"
+msgstr "«GTK+ Runtime Enviroment » ծրագիրը պետք է տեղադրել."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
@@ -213,43 +213,44 @@ msgstr "Պահպանել.."
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
 msgid "Save As.."
-msgstr "Պահպանել որպես,,"
+msgstr "Պահպանել որպես..."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
 msgid "Error/s: Check Messages"
-msgstr "Վրիպում/s. Ստուգել Հաղորդագրությունները"
+msgstr "Ձախողում/ներ. Ստուգել Հաղորդագրությունները"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr "Կոդը կազմվեց հաջողությամբ:"
+msgstr "Կոդը հաջողությամբ կազմվեց:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
 msgid "Check GoGo plugged in, turned on and connected"
-msgstr "Ստուգել, որ «ԳոԳո»-ն միացված լինի և ունենա համացանց"
+msgstr ""
+"Ստուգել, որ «GoGo»-ն ունենա սնուցում, լինի միացված ու համացանցին կապված:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
 msgid "Error communicating"
-msgstr "Հաղորդակցման վրիպում"
+msgstr "Հաղորդակցման ձախողում:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
 msgid "Code successfully downloaded."
-msgstr "Կոդը ներբեռնվեց բարեհաջող կերպով:"
+msgstr "Կոդը բարեհաջող ներբեռնվեց :"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
 msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
-msgstr "<b><span size=\"xx-large\">ԳոԳո Ծրագիր</span></b> (v %(version)s)"
+msgstr "<b><span size=\"xx-large\">GoGo Ծրագիր</span></b> (v %(version)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
 msgid "Gogo connected to the COM port "
-msgstr "«ԳոԳո»-ն միացված է COM սարքամիածքից "
+msgstr "«GoGo»-ն միացված է COM մուտքին "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
 msgid "Gogo connected on port "
-msgstr "«ԳոԳո»-ն միացված է սարքամիածքից "
+msgstr "«ԳոԳո»-ն միացված է մուտքին "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
 msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
@@ -299,7 +300,7 @@ msgstr "Միավոր"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Description"
-msgstr "Նկարագիր"
+msgstr "Նկարագրություն"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
 msgid "X"
@@ -315,15 +316,15 @@ msgstr "Ստանդարտ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
 msgid "The light value should be between 0 and 1023"
-msgstr "Լույսի արժեքը պետք է լինի 0-ի և 1023-ի սահմաններում"
+msgstr "Լույսի հզորությունը պետք է լինի 0-ի և 1023-ի սահմաններում"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
 msgid "Point already exists."
-msgstr "Միավորը արդեն գոյություն ունի:"
+msgstr "Միավորն արդեն գոյություն ունի:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
 msgid "Point already exists!"
-msgstr "Միավորը արդեն գոյություն ունի:"
+msgstr "Միավորն արդեն գոյություն ունի:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:205
 #, python-format
@@ -332,12 +333,12 @@ msgstr "<b>Սենսորային կետեր: </b>%(name)s (%(units)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
 msgid "raw"
-msgstr "անմշակ"
+msgstr "Անմշակ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
 msgid "Error: unrecognised file type: %s"
-msgstr "Վրիպում. չճանաչված ֆայլի տեսակ: %s"
+msgstr "Ձախողում. անծանոթ ֆայլի տեսակ: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
 msgid "At least two points required!"
@@ -345,7 +346,9 @@ msgstr "Պահանջվում է առնվազն երկու կետ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
 msgid "Error in automatic pm argument, use on/off."
-msgstr "Վրիպում ավտոմատ pm պաստարկի մեջ, օգտագործել միացնել/անջատել:"
+msgstr ""
+"Ձախողում սնուցման ավտոմատ կառավարման մեջ, օգտագործել on/off - "
+"միացնել/անջատել:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/__init__.py:15
 #, python-format
@@ -354,82 +357,81 @@ msgstr "Ցավոք ձեր հարթակում('%s') ոչ մի իրականցու�
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:170
 msgid "Port must be configured before it can be used."
-msgstr "Նախքան օգտագործելը սարքամիցքը անհրաժեշտ է կոնֆիգուրացնել:"
+msgstr "Մուտքը պետք է կազմաձևվի նախքան օգտագործելը:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:177
 #, python-format
 msgid "could not open port %(port)s: %(msg)s"
-msgstr "սարքամիացքը չի կարող բացել%(port)s: %(msg)s"
+msgstr "%(port)s: %(msg)s Մուտքը բացել չհաջողվեց"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:193
 msgid "Can only operate on a valid port handle"
-msgstr "Կարող է միայն գործարկվել վավեր սարքամիացքի ինդենտիֆիկատորով"
+msgstr "Կարող է գործարկվել միայն վավեր մուտքի պայմաններում:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:199
 #, python-format
 msgid "Could not configure port: %s"
-msgstr "Սարքամիացքի կոնֆիգուրացիան ձախողվեց: %s"
+msgstr "Մուտքի կոնֆիգուրացիան ձախողվեց. %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
 #, python-format
 msgid "Invalid baud rate: %r"
-msgstr "Անվավեր բոդ դյուրաչափ: %r"
+msgstr "Փոխանցման անվավեր արագություն /բաուդ/. %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
 #, python-format
 msgid "Invalid char len: %r"
-msgstr "Բնութագրի երկարությունը անվավեր է: %r"
+msgstr "Բնութագրի երկարությունն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:241
 #, python-format
 msgid "Invalid stopit specification: %r"
-msgstr "Կանգառի դասակարգումը անվավեր է: %r"
+msgstr "Կանգառի դասակարգումն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
 #, python-format
 msgid "Invalid parity: %r"
-msgstr "Անվավեր անհավասարություն: %r"
+msgstr "Անվավեր հավասարություն: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
 #, python-format
 msgid "Invalid vmin: %r "
-msgstr "vmin -ը անվավեր է: %r "
+msgstr "vmin -ն անվավեր է: %r "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:285
 #, python-format
 msgid "Invalid vtime: %r"
-msgstr "vtime -ը անվավեր է: %r"
+msgstr "vtime -ն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:332
 #, python-format
 msgid "expected str, got %s"
-msgstr "սպասվող ծրագրերի բազմությունը ձեռք բերվեց %s"
+msgstr "Սպասվող տողը /շարքը ձեռք բերվեց %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
 msgid "Serial port MUST have enabled timeout for this function!"
-msgstr ""
-"«MUST» հաջորդական սարքամիացքը ակտիվացրել է այս գործողության սպասման ժամանկը"
+msgstr "«MUST» սերիական մուտքը ակտիվացրել է այս գործողության սպառման ժամանակը"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
 msgid "Not a valid baudrate: %r"
-msgstr "Բոդ դրույքաչափը անվավեր է: %r"
+msgstr "Բաուդ դրույքաչափն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
 #, python-format
 msgid "Not a valid byte size: %r"
-msgstr "Բայթերի չափսը անվավեր է: %r"
+msgstr "Բայթերի չափսն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
 #, python-format
 msgid "Not a valid parity: %r"
-msgstr "Անվավեր անհավասարություն: %r"
+msgstr "Անվավեր հավասարություն: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:263
 #, python-format
 #, python-format,
 msgid "Not a valid stopbit size: %r"
-msgstr "Դադարի բայթի չափսը անվավեր է: %r"
+msgstr "Կանգի բիթի չափսն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:277
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:281
@@ -437,7 +439,7 @@ msgstr "Դադարի բայթի չափսը անվավեր է: %r"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:300
 #, python-format
 msgid "Not a valid timeout: %r"
-msgstr "Դադարի ժամկետը անվավեր է: %r"
+msgstr "Սպառման ժամկետն անվավեր է: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:160
 #, python-format
@@ -447,7 +449,7 @@ msgstr "X տող: Անորոշ է: %s"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:190
 #, python-format
 msgid "%s is not a valid number!"
-msgstr "%s անվավեր համար է"
+msgstr "%s անվավեր թիվ է"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:231
 #, python-format
@@ -455,8 +457,7 @@ msgid ""
 "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
 "found."
 msgstr ""
-"Տող %(line)d: Անօրինական նշան '%(value)s'. Այդ նշանի հղումները չեն կարող "
-"գտնվել:"
+"Տող %(line)d: Անօրինական նշան '%(value)s'. Այդ նշանի հղումները չեն գտնվել:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87
@@ -476,7 +477,7 @@ msgstr "չափս"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
 #, python-format
 msgid "Not identified: %s"
-msgstr "Սահմանված չէ: %s"
+msgstr "Չի ճանաչված: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:931
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:949
@@ -491,7 +492,7 @@ msgstr "Վրիպում` վերջին տողում"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
 #, python-format
 msgid "Line %(line)d: Syntax Error '%(msg)s'"
-msgstr "Տող %(line)d: Շարահյուսության վրիպում %(msg)s'"
+msgstr "Տող %(line)d: Շարահյուսության սխալ %(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1002
 #, python-format
@@ -505,7 +506,7 @@ msgstr "Վերջնական Կոդ: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:196
 msgid "Couldn't determine identifier type"
-msgstr "Չկարողացավ սահմանել իդենտիֆիկատերի տեսակը"
+msgstr "Չկարողացավ սահմանել իդենտիֆիկատորի տեսակը"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:204
 msgid "Couldn't determine integer type"
@@ -513,7 +514,7 @@ msgstr "Չկարողացավ սահմանել ամբողջական թվի տես
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
 msgid "Couldn't determine string type"
-msgstr "Չկարողացավ սահմանել ծրագրերի բազմության տեսակը"
+msgstr "Չկարողացավ սահմանել տողի /շարքի տեսակը"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
 msgid "Couldn't determine token for newlines"
@@ -522,7 +523,7 @@ msgstr "Չկարողացավ սահմանել նշաններ նոր տողերի
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
 msgid "Unable to lex '%s' required for preprocessor"
-msgstr "Հնարավոր չէ վերլուծել '%s' պահանջվում է նախապրոցեսորի համար"
+msgstr "Հնարավոր չէ վերլուծել '%s' է պահանջվում նախապրոցեսորի համար"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
 msgid "Malformed #include <...>"
@@ -535,7 +536,7 @@ msgstr "Սխալ կազմված #include հայտարարություն"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
 #, python-format
 msgid "Couldn't find '%s'"
-msgstr "Չի կարող գտնել '%s'"
+msgstr "Չկարողացա գտնել '%s'"
 
 # variadic  - ընդունել փոփոխական փաստարկներ
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
