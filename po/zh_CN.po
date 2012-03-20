@@ -2,100 +2,101 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2011-12-28 09:24+0200\n"
+"Last-Translator: lite <litekok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.6.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:35
 msgid "GoGo"
-msgstr ""
+msgstr "GoGo"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
 msgid "You do not have the required version of GTK + and / or PyGTK installed."
-msgstr ""
+msgstr "没有安装所需版本的GTK+或PyGTK。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
 #, python-format
 msgid "The installed version of GTK+ is: %s"
-msgstr ""
+msgstr "安装的GTK+版本是：%s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
 msgid "The version of GTK + is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "需要的GTK+版本是：2.8.0或更新的\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
 msgid "The version of PyGTK installed is: %s"
-msgstr ""
+msgstr "安装的PyGTK版本是：%s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
 msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "需要的PyGTK版本是：2.8.0或更新的\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
 msgid "PyGTK 2.8.0 or newer is required."
-msgstr ""
+msgstr "需要2.8.0 或更新的PyGTK。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
 msgid "There was no version of PyGTK found on your system."
-msgstr ""
+msgstr "系统上没有找到PyGTK的版本。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
 msgid "pySerial needs to be installed:"
-msgstr ""
+msgstr "需要安装PySerial。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
 msgid "Board Monitor"
-msgstr ""
+msgstr "电路板监视器"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
 msgid "Version "
-msgstr ""
+msgstr "版本 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
-msgstr ""
+msgstr "需要安装Kiwi："
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
 msgid "Gogo disconnected"
-msgstr ""
+msgstr "Gogo已断开连接"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
 msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
-msgstr ""
+msgstr "<b><span size='xx-large'>Gogo 已断开连接</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "Misc"
-msgstr ""
+msgstr "杂项"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 msgid "Beep"
-msgstr ""
+msgstr "哔哔声"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
-msgstr ""
+msgstr "灯开"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "LED Off"
-msgstr ""
+msgstr "灯关"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
@@ -109,12 +110,12 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid "Motor"
-msgstr ""
+msgstr "电机"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
 msgid "Controlling motors: "
-msgstr ""
+msgstr "控制电机："
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
@@ -125,139 +126,139 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid "Motors "
-msgstr ""
+msgstr "电机 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 msgid " On"
-msgstr ""
+msgstr " 开"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
 msgid " Off"
-msgstr ""
+msgstr " 关"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
 msgid " Brake"
-msgstr ""
+msgstr " 制动"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
 msgid " Coast"
-msgstr ""
+msgstr " 惯性滑行"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid "Power of Motors "
-msgstr ""
+msgstr "电机的电源 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid " set to "
-msgstr ""
+msgstr " 设置为 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
 msgid " this way"
-msgstr ""
+msgstr " 这边"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
 msgid " that way"
-msgstr ""
+msgstr " 那边"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 msgid " reversed"
-msgstr ""
+msgstr " 保留"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid " PwmDuty: "
-msgstr ""
+msgstr " PwmDuty:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Sensor"
-msgstr ""
+msgstr "传感器"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
-msgstr ""
+msgstr "所有传感器读数已刷新"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 msgid "Reading sensors at 20hz"
-msgstr ""
+msgstr "20赫兹读取传感器"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 msgid "Reading sensors at a 5hz"
-msgstr ""
+msgstr "5赫兹读取传感器"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Burst mode off"
-msgstr ""
+msgstr "突发模式关闭"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
 msgid "GTK+ Runtime Enviroment needs to be installed:"
-msgstr ""
+msgstr "需要安装GTK+运行环境："
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
 msgid "Open.."
-msgstr ""
+msgstr "打开.."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:129
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:313
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:348
 msgid "Save.."
-msgstr ""
+msgstr "保存.."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
 msgid "Save As.."
-msgstr ""
+msgstr "另存为.."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
 msgid "Error/s: Check Messages"
-msgstr ""
+msgstr "错误: 检查消息"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr ""
+msgstr "代码编译成功。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
 msgid "Check GoGo plugged in, turned on and connected"
-msgstr ""
+msgstr "检查GoGo已插入，开启并连接。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
 msgid "Error communicating"
-msgstr ""
+msgstr "通讯错误"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
 msgid "Code successfully downloaded."
-msgstr ""
+msgstr "代码下载成功。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
 msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
-msgstr ""
+msgstr "<b><span size=\"xx-large\">GoGo 活动</span></b> (v %(version)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
 msgid "Gogo connected to the COM port "
-msgstr ""
+msgstr "GoGo已连接到COM端口 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
 msgid "Gogo connected on port "
-msgstr ""
+msgstr "GoGo已连接到端口 "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
 msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
-msgstr ""
+msgstr "<b><span size='xx-large'>GoGo 已连接</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:84
 msgid ""
 "There were problems with the connection. Make sure the GoGo Board is "
 "properly connected."
-msgstr ""
+msgstr "连接有问题。确保GoGo板连接正确。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:137
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:148
@@ -265,165 +266,165 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:372
 #, python-format
 msgid "%i Values Uploaded"
-msgstr ""
+msgstr "%i值已上传"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:150
 msgid "Data successfully uploaded."
-msgstr ""
+msgstr "数据上传成功。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:65
 msgid "Sensor configuration file corrupted or empty."
-msgstr ""
+msgstr "传感器配置文件已损坏或为空。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:71
 msgid "Sensor configuration file does not exist."
-msgstr ""
+msgstr "传感器配置文件不存在。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:110
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:111
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Unit"
-msgstr ""
+msgstr "部件"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:112
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:149
 msgid "Standard"
-msgstr ""
+msgstr "标准"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
 msgid "The light value should be between 0 and 1023"
-msgstr ""
+msgstr "灯光值应处于0和1023之间"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
 msgid "Point already exists."
-msgstr ""
+msgstr "监测点已经存在。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
 msgid "Point already exists!"
-msgstr ""
+msgstr "监测点已经存在！"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:205
 #, python-format
 msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
-msgstr ""
+msgstr "<b>传感器监测点：</b>%(name)s (%(units)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
 msgid "raw"
-msgstr ""
+msgstr "原始"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
 msgid "Error: unrecognised file type: %s"
-msgstr ""
+msgstr "错误：无法识别的文件类型：%s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
 msgid "At least two points required!"
-msgstr ""
+msgstr "至少需要两个监测点！"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
 msgid "Error in automatic pm argument, use on/off."
-msgstr ""
+msgstr "自动电源管理参数错误，请使用开/关。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/__init__.py:15
 #, python-format
 msgid "Sorry: no implementation for your platform ('%s') available"
-msgstr ""
+msgstr "对不起：平台('%s')的实现目前不可用"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:170
 msgid "Port must be configured before it can be used."
-msgstr ""
+msgstr "必须配置端口后才可以使用。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:177
 #, python-format
 msgid "could not open port %(port)s: %(msg)s"
-msgstr ""
+msgstr "不能打开端口 %(port)s: %(msg)s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:193
 msgid "Can only operate on a valid port handle"
-msgstr ""
+msgstr "只能操作一个合法的端口句柄"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:199
 #, python-format
 msgid "Could not configure port: %s"
-msgstr ""
+msgstr "不能配置端口： %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
 #, python-format
 msgid "Invalid baud rate: %r"
-msgstr ""
+msgstr "无效的波特率：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
 #, python-format
 msgid "Invalid char len: %r"
-msgstr ""
+msgstr "无效的字符长度：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:241
 #, python-format
 msgid "Invalid stopit specification: %r"
-msgstr ""
+msgstr "无效的停止位规格：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
 #, python-format
 msgid "Invalid parity: %r"
-msgstr ""
+msgstr "无效的奇偶校验：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
 #, python-format
 msgid "Invalid vmin: %r "
-msgstr ""
+msgstr "无效的最少读取字符数: %r "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:285
 #, python-format
 msgid "Invalid vtime: %r"
-msgstr ""
+msgstr "无效的字符读取等待时间：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:332
 #, python-format
 msgid "expected str, got %s"
-msgstr ""
+msgstr "预计得到字符串, 实际是 %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
 msgid "Serial port MUST have enabled timeout for this function!"
-msgstr ""
+msgstr "此功能要求串口已启用超时！"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
 msgid "Not a valid baudrate: %r"
-msgstr ""
+msgstr "不是合法的波特率：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
 #, python-format
 msgid "Not a valid byte size: %r"
-msgstr ""
+msgstr "不是合法的字节大小：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
 #, python-format
 msgid "Not a valid parity: %r"
-msgstr ""
+msgstr "不是合法的奇偶校验：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:263
 #, python-format
 msgid "Not a valid stopbit size: %r"
-msgstr ""
+msgstr "不是合法的停止位大小：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:277
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:281
@@ -431,24 +432,24 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:300
 #, python-format
 msgid "Not a valid timeout: %r"
-msgstr ""
+msgstr "不是合法的超时值：%r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:160
 #, python-format
 msgid "Line X: Undefined: %s"
-msgstr ""
+msgstr "行 X: 未定义: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:190
 #, python-format
 msgid "%s is not a valid number!"
-msgstr ""
+msgstr "%s 不是一个合法的数字!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:231
 #, python-format
 msgid ""
 "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
 "found."
-msgstr ""
+msgstr "行 %(line)d: 非法的标记 '%(value)s'。不能找到标记的引用。"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87
@@ -459,85 +460,85 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:688
 #, python-format
 msgid "Name not found '%s'"
-msgstr ""
+msgstr "名称没找到 '%s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:400
 msgid "size"
-msgstr ""
+msgstr "大小"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
 #, python-format
 msgid "Not identified: %s"
-msgstr ""
+msgstr "不能识别: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:931
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:949
 #, python-format
 msgid "Line %(line)d: Unresolved symbol '%(msg)s'"
-msgstr ""
+msgstr "行 %(line)d: 无法解析的符号 '%(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:977
 msgid "Error in last line"
-msgstr ""
+msgstr "最后一行中的错误"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
 #, python-format
 msgid "Line %(line)d: Syntax Error '%(msg)s'"
-msgstr ""
+msgstr "行 %(line)d: 语法错误 '%(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1002
 #, python-format
 msgid "Intermediate Code: %s"
-msgstr ""
+msgstr "中间代码: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1010
 #, python-format
 msgid "Final Code: %s"
-msgstr ""
+msgstr "最终的代码: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:196
 msgid "Couldn't determine identifier type"
-msgstr ""
+msgstr "无法确定的标识符类型"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:204
 msgid "Couldn't determine integer type"
-msgstr ""
+msgstr "无法确定的整数类型"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
 msgid "Couldn't determine string type"
-msgstr ""
+msgstr "无法确定的字符串类型"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
 msgid "Couldn't determine token for newlines"
-msgstr ""
+msgstr "无法确定的换行符"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
 msgid "Unable to lex '%s' required for preprocessor"
-msgstr ""
+msgstr "不能编译 '%s',需要预处理器"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
 msgid "Malformed #include <...>"
-msgstr ""
+msgstr "格式不正确 #include <...>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:748
 msgid "Malformed #include statement"
-msgstr ""
+msgstr "格式不正确的 #include 语句"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
 #, python-format
 msgid "Couldn't find '%s'"
-msgstr ""
+msgstr "无法找到 '%s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
 msgid "No more arguments may follow a variadic argument"
-msgstr ""
+msgstr "参数过多，可能是可变参数"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:816
 msgid "Invalid macro argument"
-msgstr ""
+msgstr "无效的宏参数"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:833
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:835
 msgid "Bad macro definition"
-msgstr ""
+msgstr "错误的宏定义"
