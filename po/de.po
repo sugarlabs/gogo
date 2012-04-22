@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2011-08-14 23:57+0200\n"
-"Last-Translator: Markus <m.slg@gmx.de>\n"
+"PO-Revision-Date: 2012-02-20 05:16+0200\n"
+"Last-Translator: Chris <cjl@laptop.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.0.5\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
@@ -35,7 +35,7 @@ msgstr "Die installierte Version von GTK+ ist %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
 msgid "The version of GTK + is required: 2.8.0 or newer\n"
-msgstr "Diese Version von GTK+ ist notwendig: 2.8.0 oder neuer"
+msgstr "Diese Version von GTK+ ist notwendig: 2.8.0 oder neuer\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
@@ -44,11 +44,11 @@ msgstr "Die installiert Version von PyGTK ist: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
 msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-msgstr "Diese Version von PyGTK ist notwendig: 2.8.0 oder neuer"
+msgstr "Diese Version von PyGTK ist notwendig: 2.8.0 oder neuer\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
 msgid "PyGTK 2.8.0 or newer is required."
-msgstr "PyGTK 2.8.0 oder neuer ist notwendig"
+msgstr "PyGTK 2.8.0 oder neuer ist notwendig."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
 msgid "There was no version of PyGTK found on your system."
@@ -64,7 +64,7 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
 msgid "Version "
-msgstr "Version"
+msgstr "Version "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
@@ -117,7 +117,7 @@ msgstr "Motor"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
 msgid "Controlling motors: "
-msgstr "Kontrollmotor"
+msgstr "Kontrollmotor: "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
@@ -128,43 +128,43 @@ msgstr "Kontrollmotor"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid "Motors "
-msgstr "Motoren"
+msgstr "Motoren "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 msgid " On"
-msgstr "An"
+msgstr " An"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
 msgid " Off"
-msgstr "Aus"
+msgstr " Aus"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
 msgid " Brake"
-msgstr "Bremsen"
+msgstr " Bremsen"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
 msgid " Coast"
-msgstr "Küste"
+msgstr " Küste"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid "Power of Motors "
-msgstr "Kraft des Motors"
+msgstr "Kraft des Motors "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid " set to "
-msgstr "setzte auf"
+msgstr " setzte auf "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
 msgid " this way"
-msgstr "dieser weg"
+msgstr " dieser weg"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
 msgid " that way"
-msgstr "der weg"
+msgstr " der weg"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 msgid " reversed"
-msgstr "umkehren"
+msgstr " umkehren"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid " PwmDuty: "
@@ -223,7 +223,7 @@ msgstr "FEHLER: Prüfe Nachrichten"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr "Code erfolgreich kompiliert"
+msgstr "Code erfolgreich kompiliert."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
@@ -238,7 +238,7 @@ msgstr "Kommunikationsfehler"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
 msgid "Code successfully downloaded."
-msgstr "Code erfolgreich herunter geladen"
+msgstr "Code erfolgreich herunter geladen."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
@@ -247,11 +247,11 @@ msgstr "<b><span size=\"xx-large\">GoGo Aktivität</span></b> (v %(version)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
 msgid "Gogo connected to the COM port "
-msgstr "GoGo verbindet sich zum COM Anschluss"
+msgstr "GoGo verbindet sich zum COM Anschluss "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
 msgid "Gogo connected on port "
-msgstr "GoGo verbindet sich mit Anschluss"
+msgstr "GoGo verbindet sich mit Anschluss "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
 msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
@@ -319,7 +319,7 @@ msgstr "Der Lichtwert muss zwischen 0 und 1023 liegen"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
 msgid "Point already exists."
-msgstr "Punkt  existiert schon"
+msgstr "Punkt existiert schon."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
 msgid "Point already exists!"

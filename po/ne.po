@@ -409,6 +409,7 @@ msgid "Serial port MUST have enabled timeout for this function!"
 msgstr "यो  प्रकार्यलाई सिरियलपोर्टले सक्षम टाइनआउट पार्यो"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
+#, python-format
 #, python-format, fuzzy
 msgid "Not a valid baudrate: %r"
 msgstr "वैध प्रारिति होइन: %r"
