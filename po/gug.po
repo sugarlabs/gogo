@@ -2,21 +2,22 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2016-12-17 00:16+0000\n"
-"Last-Translator: unkuiri <unkuiri@gmail.com>\n"
+"PO-Revision-Date: 2017-10-28 23:17+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: pt\n"
+"Language: gug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.5.1.1\n"
-"X-POOTLE-MTIME: 1481933773.000000\n"
+"X-POOTLE-MTIME: 1509232656.000000\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
@@ -26,78 +27,79 @@ msgstr "GoGo"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
 msgid "You do not have the required version of GTK + and / or PyGTK installed."
-msgstr "Não tens a versão necessária do GTK + e / ou o PyGTK instalado."
+msgstr ""
+"Nde nahániri tien kuera pe versión requerida gtk mba'e y/o pygtk instalada."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
 #, python-format
 msgid "The installed version of GTK+ is: %s"
-msgstr "A versão instalada do GTK+ é: %s"
+msgstr "Pe versión instalada gtk mba'e es: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
 msgid "The version of GTK + is required: 2.8.0 or newer\n"
-msgstr "A versão do GTK+ necessária é: 2.8.0 ou mais recente\n"
+msgstr "pe versión ñeikotevẽva gtk mba'e es: 2.8.0 o superior\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
 msgid "The version of PyGTK installed is: %s"
-msgstr "A versão do PyGTK instalada é: %s"
+msgstr "Pe versión instalada PyGTK mba'e es: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
 msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-msgstr "A versão do PyGTK necessária é: 2.8.0 ou mais recente\n"
+msgstr "Pe versión ñeikotevẽva pygtk mba'e es: 2.8.0 o superior\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
 msgid "PyGTK 2.8.0 or newer is required."
-msgstr "É necessário o PyGTK 2.8.0 ou mais recente."
+msgstr "ha'e ñeikotevẽva pygtk 2.8.0 o superior."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
 msgid "There was no version of PyGTK found on your system."
-msgstr "Não foi encontrada nenhuma versão do PyGTK no teu sistema."
+msgstr "Nahániri ojeha juhuva/papyre mavave versión pygtk mba'e isistema. me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
 msgid "pySerial needs to be installed:"
-msgstr "pySerial precisa de estar instalado:"
+msgstr "Ha'e ñeikotevẽva instalar pySerial:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
 msgid "Board Monitor"
-msgstr "Monitor de Tabuleiro"
+msgstr "momaranduha sistemagua"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
 msgid "Version "
-msgstr "Versão "
+msgstr "Versión "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
-msgstr "Kiwi deve ser instalado:"
+msgstr "Ka'e ñeikotevẽva instalar Kiwi:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
 msgid "Gogo disconnected"
-msgstr "Gogo desligado"
+msgstr "hekýiva/papyre GoGo mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
 msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
-msgstr "<b><span size='xx-large'>Gogo Desligado</span></b>"
+msgstr "<b><span size='xx-large'>GoGo disconectado</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "Misc"
-msgstr "Miscelânea"
+msgstr "kuatia opa mba'e rehegua"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 msgid "Beep"
-msgstr ""
+msgstr "Pitido"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
-msgstr ""
+msgstr "LED myendyva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "LED Off"
-msgstr ""
+msgstr "LED mbogueva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
@@ -111,12 +113,12 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid "Motor"
-msgstr ""
+msgstr "momyiha"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
 msgid "Controlling motors: "
-msgstr ""
+msgstr "momyiha kuera control: mba'e "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
@@ -127,140 +129,143 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid "Motors "
-msgstr ""
+msgstr "Momyiha kuera "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 msgid " On"
-msgstr ""
+msgstr " myendyva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
 msgid " Off"
-msgstr ""
+msgstr " mbogueva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
 msgid " Brake"
-msgstr ""
+msgstr " Jokoha"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
 msgid " Coast"
-msgstr ""
+msgstr " tembe'y"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid "Power of Motors "
-msgstr ""
+msgstr "potencia mba'e momyiha kuera "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid " set to "
-msgstr ""
+msgstr " establecido me/pe "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:243
 msgid " this way"
-msgstr ""
+msgstr " rehe ápe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:251
 msgid " that way"
-msgstr ""
+msgstr " rehe pépe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 msgid " reversed"
-msgstr ""
+msgstr " invertido"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid " PwmDuty: "
-msgstr ""
+msgstr " pwmduty: "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Sensor"
-msgstr ""
+msgstr "Sensor"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
-msgstr ""
+msgstr "Refrescada kuera toda kuera lectura kuera mba'e sensor kuera"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 msgid "Reading sensors at 20hz"
-msgstr ""
+msgstr "Lectura kuera sensor kuera mba'e 20hzpe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 msgid "Reading sensors at a 5hz"
-msgstr ""
+msgstr "Lectura kuera sensor kuera mba'e 5hzpe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Burst mode off"
-msgstr ""
+msgstr "Kokatu ñembohasa voi mba'e mbogueva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
 msgid "GTK+ Runtime Enviroment needs to be installed:"
-msgstr ""
+msgstr "Ha'e ñeikotevẽva instalar pe entorno GTK+ :"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
 msgid "Open.."
-msgstr ""
+msgstr "mboty'o . ."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:129
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:313
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:348
 msgid "Save.."
-msgstr ""
+msgstr "Ñongatu..."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
 msgid "Save As.."
-msgstr ""
+msgstr "Ñongatu akaru ..."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
 msgid "Error/s: Check Messages"
-msgstr ""
+msgstr "Error/es: revisar ñe'ẽmondo kuera"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr ""
+msgstr "Código mbojoajuva/papyre ñesẽporãmba ndive."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
 msgid "Check GoGo plugged in, turned on and connected"
-msgstr ""
+msgstr "revisar hina gogo oĩ enchufado, myendyva/papyre ha mbojoapyva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
 msgid "Error communicating"
-msgstr ""
+msgstr "Jejavy momarandu mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
 msgid "Code successfully downloaded."
-msgstr ""
+msgstr "Código mboguejyva/papyre ñesẽporãmba ndive."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
 msgid "<b><span size=\"xx-large\">GoGo Activity</span></b> (v %(version)s)"
 msgstr ""
+"<b><span size=\"xx-large\">Actividad GoGo mba'e (pundie guaranímeicha ipúva "
+"hérava</span></b>ve %(version)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:69
 msgid "Gogo connected to the COM port "
-msgstr ""
+msgstr "gogo mbojoapyva/papyre pe ygarupa com "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:72
 msgid "Gogo connected on port "
-msgstr ""
+msgstr "gogo mbojoapyva/papyre pe ygarupa "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:80
-#, fuzzy
 msgid "<b><span size='xx-large'>GoGo Connected</span></b>"
-msgstr "<b><span size='xx-large'>Gogo Desligado</span></b>"
+msgstr "<b><span size='xx-large'>GoGo conectado</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:84
 msgid ""
 "There were problems with the connection. Make sure the GoGo Board is "
 "properly connected."
 msgstr ""
+"oĩ problema kuera pe ndive joapy . revisar hina pe mba'e pererĩ gogo oĩ "
+"conectada correctamente."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:137
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:148
@@ -268,165 +273,170 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:372
 #, python-format
 msgid "%i Values Uploaded"
-msgstr ""
+msgstr "%i py'aguasu kuera hupiva/papyre kuera"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:150
 msgid "Data successfully uploaded."
-msgstr ""
+msgstr "Amoarange kuera hupiva/papyre kuera ñesẽporãmba ndive."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:65
 msgid "Sensor configuration file corrupted or empty."
-msgstr ""
+msgstr "Pe fichero configuración mba'e sensor kuera oĩ harupyre o nandi."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:71
 msgid "Sensor configuration file does not exist."
-msgstr ""
+msgstr "pe fichero configuración mba'e sensor kuera nahániri oiko ."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:110
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Name"
-msgstr ""
+msgstr "Téra"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:111
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Unit"
-msgstr ""
+msgstr "Peteĩ mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:112
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Description"
-msgstr ""
+msgstr "Ñemombe'upaite"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
 msgid "X"
-msgstr ""
+msgstr "x"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:149
 msgid "Standard"
-msgstr ""
+msgstr "Estandar"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
 msgid "The light value should be between 0 and 1023"
-msgstr ""
+msgstr "Pe py'aguasu tendy debería ĩ apytépe 0 ha 1023"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:170
 msgid "Point already exists."
-msgstr ""
+msgstr "Pe kyta oiko . ma."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:178
 msgid "Point already exists!"
-msgstr ""
+msgstr "Pe kyta oiko ! ma"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:205
 #, python-format
 msgid "<b>Sensor Points: </b>%(name)s (%(units)s)"
-msgstr ""
+msgstr "<b>punto kuera sensor:gua </b>%(name)s (%(units)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
 msgid "raw"
-msgstr ""
+msgstr "tajasu me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
 msgid "Error: unrecognised file type: %s"
-msgstr ""
+msgstr "Error: tipo fichero mba'e desconocido: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
 msgid "At least two points required!"
-msgstr ""
+msgstr "Ha'e ñeikotevẽva pe mbovyve mokõi kyta kuera!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
 msgid "Error in automatic pm argument, use on/off."
-msgstr ""
+msgstr "jejavy pe argumento automático pm, puru encendido/apagado. me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/__init__.py:15
 #, python-format
 msgid "Sorry: no implementation for your platform ('%s') available"
 msgstr ""
+"Lo siento: nahániri oiko implementación iplataforma ('%s') oĩ disponible "
+"me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:170
 msgid "Port must be configured before it can be used."
 msgstr ""
+"Pe ygarupa ova'erã teko configurado mboyve hina mba'e pueda teko "
+"puruva/papyre."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:177
 #, python-format
 msgid "could not open port %(port)s: %(msg)s"
-msgstr ""
+msgstr "Nahániri ojepudieron mboty'o ygarupa kuera %(port)s: %(msg)s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:193
 msgid "Can only operate on a valid port handle"
-msgstr ""
+msgstr "Sólo oikatu japo peteĩ ygarupa indicador válido me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:199
 #, python-format
 msgid "Could not configure port: %s"
-msgstr ""
+msgstr "Nahániri ojepudo configurar pe puerto: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
 #, python-format
 msgid "Invalid baud rate: %r"
-msgstr ""
+msgstr "Pya'ekue baudio kuera mba'e inválida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
 #, python-format
 msgid "Invalid char len: %r"
-msgstr ""
+msgstr "Longitud caracter mba'e inválida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:241
 #, python-format
 msgid "Invalid stopit specification: %r"
-msgstr ""
+msgstr "Especificación pyta mba'e inválida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
 #, python-format
 msgid "Invalid parity: %r"
-msgstr ""
+msgstr "Ñembojoja inválida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
 #, python-format
 msgid "Invalid vmin: %r "
-msgstr ""
+msgstr "vmin inválido: %r "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:285
 #, python-format
 msgid "Invalid vtime: %r"
-msgstr ""
+msgstr "vtime inválido: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:332
 #, python-format
 msgid "expected str, got %s"
-msgstr ""
+msgstr "pe itasã esperada obtuvo %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
 msgid "Serial port MUST have enabled timeout for this function!"
 msgstr ""
+"Pe ygarupa serie ova'erã reko activado pe ára oha'arõ mba'e opyta ko función!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
 msgid "Not a valid baudrate: %r"
-msgstr ""
+msgstr "Nahániri ha'e peteĩ pya'ekue transmisión mba'e válida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
 #, python-format
 msgid "Not a valid byte size: %r"
-msgstr ""
+msgstr "Nahániri ha'e peteĩ jakatuha byte mba'e válido: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
 #, python-format
 msgid "Not a valid parity: %r"
-msgstr ""
+msgstr "Nahániri ha'e peteĩ ñembojoja válida: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:263
 #, python-format
 msgid "Not a valid stopbit size: %r"
-msgstr ""
+msgstr "Nahániri ha'e peteĩ jakatuha bit mba'e pyta válido: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:277
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:281
@@ -434,17 +444,17 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:300
 #, python-format
 msgid "Not a valid timeout: %r"
-msgstr ""
+msgstr "Nahániri ha'e peteĩ ára oha'arõ mba'e válido: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:160
 #, python-format
 msgid "Line X: Undefined: %s"
-msgstr ""
+msgstr "Línea x: indefinida: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:190
 #, python-format
 msgid "%s is not a valid number!"
-msgstr ""
+msgstr "%s nahániri ha'e peteĩ papaha válido!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyLex.py:231
 #, python-format
@@ -452,6 +462,8 @@ msgid ""
 "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
 "found."
 msgstr ""
+"Línea %(line)d: kuatia'i mohendáva '%(value)s' kañy . mandu´a kuera estape "
+"kuatia'i mohendáva nahániri oikatu teko encontrada kuera."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87
@@ -462,85 +474,86 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:688
 #, python-format
 msgid "Name not found '%s'"
-msgstr ""
+msgstr "Téra '%s' nahániri juhuva/papyre"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:400
 msgid "size"
-msgstr ""
+msgstr "Jakatuha"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
 #, python-format
 msgid "Not identified: %s"
-msgstr ""
+msgstr "identificar:ỹre %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:931
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:949
 #, python-format
 msgid "Line %(line)d: Unresolved symbol '%(msg)s'"
-msgstr ""
+msgstr "Linea %(line)d: símbolo resolverỹre '%(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:977
 msgid "Error in last line"
-msgstr ""
+msgstr "Jejavy pe pahague línea me/pe"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
 #, python-format
 msgid "Line %(line)d: Syntax Error '%(msg)s'"
-msgstr ""
+msgstr "Linea %(line)d: jejavy sintaxis mba'e '%(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1002
 #, python-format
 msgid "Intermediate Code: %s"
-msgstr ""
+msgstr "código intermedio: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:1010
 #, python-format
 msgid "Final Code: %s"
-msgstr ""
+msgstr "Código final: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:196
 msgid "Couldn't determine identifier type"
-msgstr ""
+msgstr "Nahániri ojepudo japouka pe tipo identificador mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:204
 msgid "Couldn't determine integer type"
-msgstr ""
+msgstr "Nahániri ojepudo japouka pe tipo entero mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
 msgid "Couldn't determine string type"
-msgstr ""
+msgstr "Nahániri ojepudo japouka pe tipo itasã mba'e"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
 msgid "Couldn't determine token for newlines"
-msgstr ""
+msgstr "Nahániri ojeoikatu japouka kuatia'i mohendáva opyta línea pyahu"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
 msgid "Unable to lex '%s' required for preprocessor"
-msgstr ""
+msgstr "ikatu'ỹva hesa'ỹijo mba'e '%s' requerido rehe pe pre-procesador"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:740
 msgid "Malformed #include <...>"
-msgstr ""
+msgstr "#include <...> malformado"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:748
 msgid "Malformed #include statement"
-msgstr ""
+msgstr "Mombe'upy"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
 #, python-format
 msgid "Couldn't find '%s'"
-msgstr ""
+msgstr "Nahániri ojepudo juhu '%s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
 msgid "No more arguments may follow a variadic argument"
 msgstr ""
+"Mavave argumento ova'erã jejuhu rire peteĩ mba'e argumento tipo variadic"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:816
 msgid "Invalid macro argument"
-msgstr ""
+msgstr "Argumento macro inválido"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:833
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:835
 msgid "Bad macro definition"
-msgstr ""
+msgstr "ñemosakãite macro mba'e jejavykue"

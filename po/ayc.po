@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2013-04-27 20:57+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-10-28 23:32+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ayc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1509233533.000000\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
@@ -177,7 +178,7 @@ msgstr "Katjiri"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
-msgstr "katjirina taqi ullañanaka machaqachata"
+msgstr "Katjirina taqi ullañanaka machaqachata"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 msgid "Reading sensors at 20hz"
@@ -189,7 +190,7 @@ msgstr "5hz chimpuni katjirinaka ullatanaka"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Burst mode off"
-msgstr "k'ata qhantayirinaka jiwayata"
+msgstr "K'ata qhantayirinaka jiwayata"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:35
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:35
@@ -224,7 +225,7 @@ msgstr "Pantjata/pantjatanaka: apayanaka ullaña"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr "wali atipasa chimpunaka apthapiña"
+msgstr "Wali atipasa chimpunaka apthapiña"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
@@ -238,7 +239,7 @@ msgstr "Yatiyäwina pantjata"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
 msgid "Code successfully downloaded."
-msgstr "wali atipasa chimpu apaqaña"
+msgstr "Wali atipasa chimpu apaqaña"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
@@ -338,7 +339,7 @@ msgstr "<b>Katjiri Atipsuta chanipa: </b>%(name)s (%(units)s)"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
 msgid "raw"
-msgstr "Qawayata"
+msgstr "qawayata"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
@@ -347,7 +348,7 @@ msgstr "Pantjata: jani uñt'ata imaña wakichata: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:404
 msgid "At least two points required!"
-msgstr "¡niya paya atipsuta chanisa wakisipuniwa!"
+msgstr "¡Niya paya atipsuta chanisa wakisipuniwa!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/power/power.py:89
 msgid "Error in automatic pm argument, use on/off."
@@ -379,7 +380,7 @@ msgstr "Mayachaña wakichataxa janiwa suma wakichayasiti: %s"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:222
 #, python-format
 msgid "Invalid baud rate: %r"
-msgstr "uka baudios k'ata sarayirinaka jani uñt'atawa: %r"
+msgstr "Uka baudios k'ata sarayirinaka jani uñt'atawa: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:234
 #, python-format
@@ -394,7 +395,7 @@ msgstr "Sayt'äwi qhananchäwi jani uñt'atawa: %r"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:252
 #, python-format
 msgid "Invalid parity: %r"
-msgstr "panichjiri jani uñt'atawa: %r"
+msgstr "Panichjiri jani uñt'atawa: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialposix.py:281
 #, python-format
@@ -413,7 +414,7 @@ msgstr "suyata ajuñaxa apsuwa %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
 msgid "Serial port MUST have enabled timeout for this function!"
-msgstr "¡mayachaña katuqiri mayachasirinaka suyañataki chimpupa qhantatañapawa!"
+msgstr "¡Mayachaña katuqiri mayachasirinaka suyañataki chimpupa qhantatañapawa!"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
@@ -423,7 +424,7 @@ msgstr "Mayachasiña katuqirina k'ata sarayiri jani uñt'atawa: %r"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:237
 #, python-format
 msgid "Not a valid byte size: %r"
-msgstr "wakisiri byte wakichatana tañapaxa jani uñt'atawa: %r"
+msgstr "Wakisiri byte wakichatana tañapaxa jani uñt'atawa: %r"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:250
 #, python-format
@@ -491,7 +492,7 @@ msgstr "Thaki %(line)d: jani uñt'ata chimpu '%(msg)s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:977
 msgid "Error in last line"
-msgstr "qhipa thakina pantjata"
+msgstr "Qhipa thakina pantjata"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:988
 #, python-format
@@ -518,11 +519,11 @@ msgstr "Uñaqata maypacha jakhuxa janiwa jakiyasiti"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:213
 msgid "Couldn't determine string type"
-msgstr "uñaqata ajuña janiwa katuyasiti"
+msgstr "Uñaqata ajuña janiwa katuyasiti"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:230
 msgid "Couldn't determine token for newlines"
-msgstr "machaqa thakitaki imaña wakichataxa janiwa jakiyasiti"
+msgstr "Machaqa thakitaki imaña wakichataxa janiwa jakiyasiti"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:242
 #, python-format
@@ -540,12 +541,12 @@ msgstr "Arsüwi #include jani uñanaqani"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:765
 #, python-format
 msgid "Couldn't find '%s'"
-msgstr "janiwa jakiyasiti '%s'"
+msgstr "Janiwa jakiyasiti '%s'"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:797
 msgid "No more arguments may follow a variadic argument"
 msgstr ""
-"janiwa kuna qhananchäwisa jakiyasiti uka variadic qhananchiri wakichatata "
+"Janiwa kuna qhananchäwisa jakiyasiti uka variadic qhananchiri wakichatata "
 "qhipatxa"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/ply/cpp.py:816

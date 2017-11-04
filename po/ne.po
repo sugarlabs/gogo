@@ -7,15 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2011-07-20 08:21+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-10-28 23:44+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Pootle 2.0.1\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1509234286.000000\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
@@ -406,7 +407,7 @@ msgstr "सोचिएको str, पाइयो %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:75
 msgid "Serial port MUST have enabled timeout for this function!"
-msgstr "यो  प्रकार्यलाई सिरियलपोर्टले सक्षम टाइनआउट पार्यो"
+msgstr "यो प्रकार्यलाई सिरियलपोर्टले सक्षम टाइनआउट पार्यो"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/serial/serialutil.py:224
 #, python-format
@@ -453,8 +454,7 @@ msgid ""
 "Line %(line)d: Illegal Token '%(value)s'. References to this token cannot be "
 "found."
 msgstr ""
-"रेखा%(line)d:गैरकानुनी टोकन'%(value)s'.यो  टोकनको रेफिरेन्स भेटाउन सकेको "
-"छैन्"
+"रेखा%(line)d:गैरकानुनी टोकन'%(value)s'.यो टोकनको रेफिरेन्स भेटाउन सकेको छैन्"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:84
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:87

@@ -7,55 +7,56 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2011-03-17 06:48+0200\n"
-"Last-Translator: Chris <cjl@laptop.org>\n"
+"PO-Revision-Date: 2017-10-28 23:55+0000\n"
+"Last-Translator: Chris <cjl@sugarlabs.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.6.0\n"
+"X-Generator: Pootle 2.5.1.1\n"
+"X-POOTLE-MTIME: 1509234913.000000\n"
 
 #: activity/activity.info:2
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:34
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/GoGoActivity.py:35
 msgid "GoGo"
-msgstr ""
+msgstr "GoGo"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
 msgid "You do not have the required version of GTK + and / or PyGTK installed."
-msgstr ""
+msgstr "Non hai installata la versione richiesta di GTK+ e/o PyGTK."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
 #, python-format
 msgid "The installed version of GTK+ is: %s"
-msgstr ""
+msgstr "La versione installata di GTK+ è: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
 msgid "The version of GTK + is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "Per GTK+ è richiesta è la versione 2.8.0 o superiore\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
 msgid "The version of PyGTK installed is: %s"
-msgstr ""
+msgstr "La versione installata di PyGTK è: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
 msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "Per PyGTK è richiesta è la versione 2.8.0 o superiore\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
 msgid "PyGTK 2.8.0 or newer is required."
-msgstr ""
+msgstr "È richiestp PyGTK versione 2.8.0 o superiori."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
 msgid "There was no version of PyGTK found on your system."
-msgstr ""
+msgstr "Non è stata trovata alcuna versione di di PyGTK sul tuo sistema."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
 msgid "pySerial needs to be installed:"
-msgstr ""
+msgstr "È necessario installare pySerial:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
 msgid "Board Monitor"
@@ -63,11 +64,11 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
 msgid "Version "
-msgstr ""
+msgstr "Versione "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
-msgstr ""
+msgstr "È necessario installare Kiwi:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
@@ -92,11 +93,11 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
-msgstr ""
+msgstr "LED Acceso"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "LED Off"
-msgstr ""
+msgstr "LED Spento"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
@@ -173,7 +174,7 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Sensor"
-msgstr ""
+msgstr "Sensore"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
@@ -181,11 +182,11 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 msgid "Reading sensors at 20hz"
-msgstr ""
+msgstr "In lettura sensori a 20hz"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 msgid "Reading sensors at a 5hz"
-msgstr ""
+msgstr "In lettura sensori a 5hz"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Burst mode off"
@@ -196,7 +197,7 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:29
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/Tab.py:27
 msgid "GTK+ Runtime Enviroment needs to be installed:"
-msgstr ""
+msgstr "È necessario installare GTK+ Runtime Environment:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
@@ -217,11 +218,11 @@ msgstr "Salva come.."
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:219
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:223
 msgid "Error/s: Check Messages"
-msgstr ""
+msgstr "Errore/i: Verifica messaggi"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:226
 msgid "Code successfully compiled."
-msgstr ""
+msgstr "Codice compilato con successo."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:231
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:142
@@ -231,11 +232,12 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:233
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:145
 msgid "Error communicating"
-msgstr ""
+msgstr "Errore in comunicazione"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:235
+#, fuzzy
 msgid "Code successfully downloaded."
-msgstr ""
+msgstr "Codice compilato con successo."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:59
 #, python-format
