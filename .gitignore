@@ -1,2 +1,5 @@
 *.pyc
+*.py~
 *.xo
+*.pyo
+*.pkl
