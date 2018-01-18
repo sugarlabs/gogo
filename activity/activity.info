@@ -7,5 +7,5 @@ icon = GoGo
 activity_version = 2
 #mime_types = application/vnd.olpc-sugar;x/application/vnd.olpc-sugar;application/vnd.oasis.opendocument.text
 show_launcher = yes
-license = BSD 3
+license = GPLv2;GPLv3;BSD 3
 #update_url = http://wiki.laptop.org/go/GoGo
