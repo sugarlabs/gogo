@@ -2,7 +2,7 @@
 name = GoGo
 bundle_id = org.laptop.GoGo
 service_name = org.laptop.GoGo
-exec = sugar-activity GoGoActivity.GoGoActivity -s
+exec = sugar-activity3 GoGoActivity.GoGoActivity -s
 icon = GoGo
 activity_version = 2
 #mime_types = application/vnd.olpc-sugar;x/application/vnd.olpc-sugar;application/vnd.oasis.opendocument.text
