@@ -18,7 +18,7 @@
 # DMOC 21/12/2010: Code extracted from Power extension to Sugar Control Panel
 
 from gettext import gettext as _
-import gconf
+from gi.repository import Gio
 import dbus
 import os
 import logging
@@ -49,11 +49,11 @@ def get_automatic_pm():
         return not os.access(POWERD_INHIBIT_FLAG, os.R_OK)
 
     # ohmd
-    client = gconf.client_get_default()
-    return client.get_bool('/desktop/sugar/power/automatic')
+    settings = Gio.Settings('org.sugarlabs.user')
+    return settings.get_bool('/desktop/sugar/power/automatic')
 
 def print_automatic_pm():
-    print ('off', 'on')[get_automatic_pm()]
+    print(('off', 'on')[get_automatic_pm()])
 
 def set_automatic_pm(enabled):
     """Automatic suspends on/off."""
@@ -88,7 +88,7 @@ def set_automatic_pm(enabled):
     else:
         raise ValueError(_("Error in automatic pm argument, use on/off."))
 
-    client = gconf.client_get_default()
-    client.set_bool('/desktop/sugar/power/automatic', enabled)
+    settings = Gio.Settings('org.sugarlabs.user')
+    settings.set_bool('/desktop/sugar/power/automatic', enabled)
     return 0
 

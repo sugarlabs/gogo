@@ -10,6 +10,6 @@ VERSION = '2.3'
 
 #chose an implementation, depending on os
 if os.name == 'posix':
-    from serialposix import *
+    from .serialposix import *
 else:
     raise Exception(_("Sorry: no implementation for your platform ('%s') available") % os.name)

@@ -1,13 +1,17 @@
 # GoGoActivity/GoGoActivity.py
 
 import os
-import gtk
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
 import time
 import logging
 
 from gettext import gettext as _
 
-from sugar.activity import activity
+from sugar3.activity import activity
+from sugar3.graphics.toolbarbox import ToolbarBox
+from sugar3.activity.widgets import ActivityToolbarButton
 
 from monitor import BoardMonitor
 
@@ -35,14 +39,14 @@ class GoGoActivity(activity.Activity):
         logging.info(_('GoGo'))
         
         # Show the toolbox elements
-        toolbox = activity.ActivityToolbox(self)
-        self.set_toolbox(toolbox)
+        toolbox = ToolbarBox(self)
+        self.set_toolbar_box(toolbox)
         toolbox.show()
 
         self.monitor = BoardMonitor(self)
         
         # Display everything
-        vb = gtk.VBox()
+        vb = Gtk.VBox()
         self.monitor.notebookMain.reparent(vb)
         self.monitor.statusbar.reparent(vb)
         self.set_canvas(vb)
@@ -73,7 +77,7 @@ class GoGoActivity(activity.Activity):
             FILE = open(file_path,"r")
             self.monitor.proceduresTab.LogoProceduresBuffer.set_text(FILE.read())
             FILE.close()
-        except Exception, e:
+        except Exception as e:
             _logger.error('read_file(): %s, error: %s', file_path, e)
 
     def write_file(self, file_path):
@@ -83,7 +87,7 @@ class GoGoActivity(activity.Activity):
             FILE = open(file_path,"w")
             FILE.write(self.monitor.proceduresTab.LogoProceduresBuffer.get_text(self.LogoProceduresBuffer.get_start_iter(),self.LogoProceduresBuffer.get_end_iter()))
             FILE.close()
-        except Exception, e:
+        except Exception as e:
             _logger.error('write_file(): %s, error: %s', file_path, e)
         
 

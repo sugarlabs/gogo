@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import plots
+from . import plots
 
 
 HORZ = 0

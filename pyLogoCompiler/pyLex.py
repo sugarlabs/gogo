@@ -14,8 +14,8 @@
 from gettext import gettext as _
 
 import os
-import ply.lex as lex
-from ply.lex import TOKEN
+from .ply import lex
+from .ply.lex import TOKEN
 
 errMsgFunc = None
 
@@ -95,7 +95,7 @@ reserved = {
 #lista de tokens
 tokens = ['MINUS', 'PERCENT', 'LPAREN', 'RPAREN', 'TIMES', 'DIVIDE', 'BYTES', 
         'LBRACKET', 'RBRACKET', 'PLUS', 'LESSTHAN', 'EQUALS', 'GREATERTHAN', 'MOTORATTENTION',
-        'NUMBERLITERAL', 'PROCEDURENAME', 'RECEIVER', 'REPORTER'] + reserved.values()
+        'NUMBERLITERAL', 'PROCEDURENAME', 'RECEIVER', 'REPORTER'] + list(reserved.values())
 
 #teste = ['uma'] + reserved.values()
 
@@ -145,49 +145,49 @@ newline = r'\n+'
 
 @TOKEN(motor)
 def t_MOTORATTENTION(t):
-    print " # pyLex -> t_MOTORATTENTION '%s'" % t
+    print(" # pyLex -> t_MOTORATTENTION '%s'" % t)
     t.type = reserved.get(t.value,'MOTORATTENTION')
     return t
 
 @TOKEN(procname)
 def t_PROCEDURENAME(t):
-    print " # pyLex -> t_PROCEDURENAME '%s'" % t
+    print(" # pyLex -> t_PROCEDURENAME '%s'" % t)
     try:
         t.type = reserved.get(t.value,'PROCEDURENAME') # Checa se é uma palavra reservada
     except ValueError:
         #print "[Line: %d Column: %d] - Undefined: %s" % (t.lineno, t.linepos, t.value)
         #print _("[Line: %d Column: %d] - Undefined: %s" % (t.lineno, t.linepos, t.value))
-        print _("Line X: Undefined: %s" % t.value)
+        print(_("Line X: Undefined: %s" % t.value))
         t.value = 0
     return t
 
 @TOKEN(reporter)
 def t_REPORTER(t):
-    print " # pyLex -> t_REPORTER '%s'" % t
+    print(" # pyLex -> t_REPORTER '%s'" % t)
     t.type = reserved.get(t.value,'REPORTER') # Checa se é uma palavra reservada
     return t
 
 @TOKEN(receiver)
 def t_RECEIVER(t):
-    print " # pyLex -> t_RECEIVER '%s'" % t
+    print(" # pyLex -> t_RECEIVER '%s'" % t)
     t.type = reserved.get(t.value,'RECEIVER') # Checa se é uma palavra reservada
-    print "t.type= '%s'" % t.type
+    print("t.type= '%s'" % t.type)
     return t
 
 @TOKEN(bytes)
 def t_BYTES(t):
-    print " # pyLex -> t_BYTES '%s'" % t
+    print(" # pyLex -> t_BYTES '%s'" % t)
     t.type = reserved.get(t.value, 'BYTES')
     return t 
 
 @TOKEN(nliteral)
 def t_NUMBERLITERAL(t):
-    print " # pyLex -> t_NUMBERLITERAL '%s'" % t
+    print(" # pyLex -> t_NUMBERLITERAL '%s'" % t)
     try:
         t.value = int(t.value)
     except ValueError:
         #print _("Número %s não é válido!") % t.value
-        print _("%s is not a valid number!") % t.value
+        print(_("%s is not a valid number!") % t.value)
         t.value = 0        
     return t
 
@@ -224,7 +224,7 @@ def t_error(t):
     m = msgErro(t.lineno, t.lexpos, t.value[0])
 #    if errMsgFunc:
 #        errMsgFunc(m)
-    print m
+    print(m)
     t.lexer.skip(1)
 
 

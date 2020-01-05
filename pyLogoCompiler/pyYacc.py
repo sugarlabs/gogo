@@ -13,11 +13,11 @@
 
 from gettext import gettext as _
 
-import ply.yacc as yacc
+from .ply import yacc
 
 #Pega os tokens já checados no analisador léxico
-from pyLex import tokens
-import pyLex
+from .pyLex import tokens
+from . import pyLex
 
 CODE_START = [0]
 CODE_STOP = [7]
@@ -51,12 +51,12 @@ RECOMPILE = False
 
 def p_procedures(p):
     '''procedures : procedure procedures'''
-    print " # pyYacc -> p_procedures"
+    print(" # pyYacc -> p_procedures")
     p[0] = p[1] + p[2]
 
 def p_procedures_procedure(p):
     'procedures : procedure '
-    print " # pyYacc -> p_procedures_procedure p[0]=p[1]='%s'" % p[1]
+    print(" # pyYacc -> p_procedures_procedure p[0]=p[1]='%s'" % p[1])
     p[0] = p[1]
 
 #TODO: remove tmp refs to RECOMPILE...
@@ -67,9 +67,9 @@ def p_procedure(p):
         l = []
         global size
 
-        print " # pyYacc -> p_procedure"
+        print(" # pyYacc -> p_procedure")
         for i in range(4):
-            print "p[",i+1,"]", p[i+1]
+            print("p[",i+1,"]", p[i+1])
 
         procname=p[2]
         nomeprocs[procname]=size
@@ -81,10 +81,10 @@ def p_procedure(p):
             size += len(l)
         else:
             #raise Exception, _("Nome não determinado '%s'") % p[2]
-            raise Exception, _("Name not found '%s'") % p[2]
+            raise Exception(_("Name not found '%s'") % p[2])
     except AttributeError:
         #raise Exception, _("Nome não determinado '%s'") % p[2]
-        raise Exception, _("Name not found '%s'") % p[2]
+        raise Exception(_("Name not found '%s'") % p[2])
         p[0] = 0
         
     RECOMPILE = True
@@ -93,12 +93,12 @@ def p_procedure_parametere(p):
     '''procedure : TO PROCEDURENAME parameterDeclaration statements END'''
     try:
         l = []
-        print " # pyYacc -> p_procedure_parametere"
+        print(" # pyYacc -> p_procedure_parametere")
         global size
 
         procname=p[2]
         nomeprocs[procname]=size
-        print 'nomeprocs: ',nomeprocs
+        print('nomeprocs: ',nomeprocs)
         if p[1] == 'to' and p[5] == 'end':
             global nvlocais
             global vlocais
@@ -113,17 +113,17 @@ def p_procedure_parametere(p):
             size += len(l)
         else:
             #raise Exception, _("Nome não determinado '%s'") % p[2]
-            raise Exception, _("Name not found '%s'") % p[2]
+            raise Exception(_("Name not found '%s'") % p[2])
     except ValueError:
         #print _("Nome não determinado '%s'") % p[2]
-        print _("Name not found '%s'") % p[2]
+        print(_("Name not found '%s'") % p[2])
         p[0] = 0
 
 def p_parameterDeclaration(p):
     '''parameterDeclaration : RECEIVER parameterDeclaration 
                             | RECEIVER'''
-    print " # pyYacc -> p_parameterDeclaration"
-    print "p[1] = '%s'" % p[1],len(p)
+    print(" # pyYacc -> p_parameterDeclaration")
+    print("p[1] = '%s'" % p[1],len(p))
 
     try:
         global nvlocais
@@ -133,30 +133,30 @@ def p_parameterDeclaration(p):
 
         procname=p[x+1]
         nvlocais+=1
-        print procname
-        print vlocais
+        print(procname)
+        print(vlocais)
         if not procname in vlocais:
             vlocais[procname]=[]
         vlocais[procname].insert(0,p[1])
     except:
         #print _("Nome não determinado '%s'") % p[1]
-        print _("Name not found '%s'") % p[1]
+        print(_("Name not found '%s'") % p[1])
         p[0] = []
 
 def p_statements(p):
     '''statements : statement statements'''
-    print " # pyYacc -> p_statements"
+    print(" # pyYacc -> p_statements")
     p[0] = p[1] + p[2]
 
 def p_statements_statement(p):
     'statements : statement'
-    print " # pyYacc -> p_statements_statement"
+    print(" # pyYacc -> p_statements_statement")
     p[0] = p[1]
 
 def p_statement_repeat(p):
     '''statement : REPEAT expression LBRACKET statements RBRACKET'''
     #representação do repeat: <expressao> <list> <lengthlist> <expressao> <eol> <repeat> 
-    print " # pyYacc -> p_statement_repeat"
+    print(" # pyYacc -> p_statement_repeat")
     try:
         l =[]
         l += p[2]
@@ -176,7 +176,7 @@ def p_statement_repeat(p):
 
 def p_statement_loop(p):
     '''statement : LOOP LBRACKET statements RBRACKET'''
-    print " # pyYacc -> p_statement_loop"
+    print(" # pyYacc -> p_statement_loop")
     try:
         l =[]
         l.append(3)
@@ -195,7 +195,7 @@ def p_statement_loop(p):
 
 def p_statement_forever(p):
     '''statement : FOREVER LBRACKET statements RBRACKET'''
-    print " # pyYacc -> p_statement_forever"
+    print(" # pyYacc -> p_statement_forever")
     try:
         l =[]
         l.append(3)
@@ -215,16 +215,16 @@ def p_statement_forever(p):
 def p_statement_if(p):
     '''statement : IF expression LBRACKET statements RBRACKET'''
     #representação do repeat: <expressao> <list> <lengthlist> <expressao> <eol> <if> 
-    print " # pyYacc -> p_statement_if"
+    print(" # pyYacc -> p_statement_if")
     try:
         l =[]
         l += p[2]
         l.append(3)
         if p[3] == '[' and p[5] == ']':
             l2 = p[4]
-            print l2
+            print(l2)
             l.append(len(l2)+1)#tamanho da lista
-            print len(l2)+1
+            print(len(l2)+1)
             l += l2
             l.append(4)
             #if DEBUG:
@@ -238,7 +238,7 @@ def p_statement_if(p):
 def p_statement_ifelse(p):
     '''statement : IFELSE expression LBRACKET statements RBRACKET LBRACKET statements RBRACKET'''
     #representação do repeat: <expressao> <list> <lengthlist> <expressao> <eol> (2x) <ifelse> 
-    print " # pyYacc -> p_statement_ifelse"
+    print(" # pyYacc -> p_statement_ifelse")
     try:
         l =[]
         l += p[2]
@@ -267,7 +267,7 @@ def p_statement_ifelse(p):
 def p_statement_waituntil(p):
     '''statement : WAITUNTIL LBRACKET expression RBRACKET'''
     #representação do repeat: <list> <lengthlist> <expressao> <eolr> <waituntil> 
-    print " # pyYacc -> p_statement_waituntil"
+    print(" # pyYacc -> p_statement_waituntil")
     try:
         l =[]
         if p[2] == '[' and p[4] == ']':
@@ -287,7 +287,7 @@ def p_statement_waituntil(p):
 def p_statement_when(p):
     '''statement : WHEN expression LBRACKET expression RBRACKET'''
     #representação do repeat: <list> <lengthlist> <expressao> <eolr> <waituntil> 
-    print " # pyYacc -> p_statement_when"
+    print(" # pyYacc -> p_statement_when")
     try:
         l =[]
         l += p[2]
@@ -351,7 +351,7 @@ def p_statement_when(p):
 
 def p_statement_show_expression(p):
         '''statement : SHOW expression'''
-        print " # pyYacc -> p_statement_show_expression p= '%s'" %p[2]
+        print(" # pyYacc -> p_statement_show_expression p= '%s'" %p[2])
         l=[]
 
         l.append(91)
@@ -362,7 +362,7 @@ def p_statement_show_expression(p):
         l.append(2)
         l.append(93)#CL_I2C_WRITE
 
-        print p[2]
+        print(p[2])
         if len(p[2])==2: #show numbr in display
                 if p[2][0]==1:
                         l.append(1)
@@ -395,9 +395,9 @@ def p_statement_show_expression(p):
 
 def p_statement_show_disp(p):
         '''statement : SHOW RECEIVER'''
-        print " # pyYacc -> p_statement_SHOW-disp p= '%s'" %p[2]
+        print(" # pyYacc -> p_statement_SHOW-disp p= '%s'" %p[2])
         #print _('tamanho'), len(p[2])
-        print _('size'), len(p[2])
+        print(_('size'), len(p[2]))
         l=[]
 
         l.append(91)#CL_I2C_START
@@ -441,7 +441,7 @@ def p_statement_show_disp(p):
 
 def p_statement_make(p):
     '''statement : MAKE RECEIVER expression'''
-    print " # pyYacc -> p_statement_MAKE"
+    print(" # pyYacc -> p_statement_MAKE")
 
     if variaveis.count(p[2])==0:
         pos=len(variaveis)
@@ -478,7 +478,7 @@ def p_statement_expression(p):
                  | BSR expression
                  | SETDP expression
                  | FASTSEND expression''' 
-    print " # pyYacc -> p_statement_expression"
+    print(" # pyYacc -> p_statement_expression")
     try:
         p.lineno(1)
         p.lineno(2)
@@ -541,7 +541,7 @@ def p_statement_value(p):
                   | WHENOFF
                   | procedurecall
                   '''
-    print " # pyYacc -> p_statement_value"
+    print(" # pyYacc -> p_statement_value")
     if p[1] == 'beep':
         op = [12]
     elif p[1] == 'stop':
@@ -598,7 +598,7 @@ def p_statement_value(p):
 
 def p_statement_motorAttention(p):    
     '''statement :  MOTORATTENTION'''
-    print " # pyYacc -> p_statement_motorAttention"
+    print(" # pyYacc -> p_statement_motorAttention")
     l=[]
     l.append(1)
     if p[1] == 'a,':
@@ -632,14 +632,14 @@ def p_statement_motorAttention(p):
     elif p[1] == 'abcd,':
         l.append(15)
     else:
-        raise TypeError, "Motor '%s' desconhecido\n Ex.:\n a, on\nab, onfor 3\nbc, setpower 2" % p[1]
+        raise TypeError("Motor '%s' desconhecido\n Ex.:\n a, on\nab, onfor 3\nbc, setpower 2" % p[1])
 
     l.append(90)
     p[0] = l
 
 def p_statement_bytes(p):
     '''statement :  BYTES'''
-    print " # pyYacc -> p_statement_bytes"
+    print(" # pyYacc -> p_statement_bytes")
     if (p[1] == '0x83') or \
        (p[1] == '0x84') or \
        (p[1] == '0x85') or \
@@ -652,7 +652,7 @@ def p_statement_bytes(p):
 
 def p_expression_reporter(p):
     '''expression : REPORTER'''
-    print " # pyYacc -> p_expression_reporter"
+    print(" # pyYacc -> p_expression_reporter")
 
     l=[]
     pos=0
@@ -661,8 +661,8 @@ def p_expression_reporter(p):
         x-=1
 
     procname=p[x+1]
-    print 'procname: ',procname
-    print 'vlocais: ',vlocais
+    print('procname: ',procname)
+    print('vlocais: ',vlocais)
     if (procname in vlocais) and (not vlocais[procname].count('"'+p[1][1:])==0):
             for i in vlocais[procname]:
                 if i == '"'+p[1][1:]:
@@ -674,7 +674,7 @@ def p_expression_reporter(p):
     else:
         if len(variaveis) == 0:
             #raise TypeError, "Nome não determinado '%s'" % p[1]
-            raise TypeError, _("Name not found '%s'") % p[1]
+            raise TypeError(_("Name not found '%s'") % p[1])
 
         encontrou=0
         for i in variaveis:
@@ -685,7 +685,7 @@ def p_expression_reporter(p):
 
         if encontrou == 0: #nenhuma variavel encontrada
             #raise TypeError, "Nome não determinado '%s'" % p[1]
-            raise TypeError, _("Name not found '%s'") % p[1]
+            raise TypeError(_("Name not found '%s'") % p[1])
             p[0]=[]
 
         else:
@@ -707,7 +707,7 @@ def p_expression(p):
                   | expression TIMES expression
                   | expression DIVIDE expression
                   | expression PERCENT expression'''
-    print " # pyYacc -> p_expression"
+    print(" # pyYacc -> p_expression")
     try:
         lexp =[]
         op = 0
@@ -745,13 +745,13 @@ def p_expression(p):
         lexp.append(op)
         p[0] = lexp
     except TypeError:
-        print 'Tipos incompativeis! '
+        print('Tipos incompativeis! ')
         p[0] = [] 
 
 def p_expression_uminus(p):
     '''expression : MINUS expression %prec UMINUS'''
-    print " # pyYacc -> p_expression_uminus"
-    print p[2]
+    print(" # pyYacc -> p_expression_uminus")
+    print(p[2])
     lexp = []
     lexp += p[2]
     lexp.append(1)
@@ -761,7 +761,7 @@ def p_expression_uminus(p):
 
 def p_expression_unot(p):
     'expression : NOT expression %prec UNOT'
-    print " # pyYacc -> p_expression_unot"
+    print(" # pyYacc -> p_expression_unot")
     lexp = []
     lexp = p[2]
     lexp.append(34)    
@@ -769,7 +769,7 @@ def p_expression_unot(p):
 
 def p_expression_group(p):
     '''expression : LPAREN expression RPAREN'''
-    print " # pyYacc -> p_expression_group"
+    print(" # pyYacc -> p_expression_group")
     try:
         lexp = []
         if p[1] == '(' and p[3] == ')':
@@ -781,7 +781,7 @@ def p_expression_group(p):
 
 def p_expression_group_bracket(p):
     '''expression : LBRACKET expression RBRACKET'''
-    print " # pyYacc -> p_expression_group_bracket"
+    print(" # pyYacc -> p_expression_group_bracket")
     try:
         lexp = []
         if p[1] == '[' and p[3] == ']':
@@ -795,7 +795,7 @@ def p_expression_expression(p):
     '''expression : I2C_READ expression
                   | HIGHBYTE expression
                   | LOWBYTE expression'''
-    print " # pyYacc -> p_expression_group"
+    print(" # pyYacc -> p_expression_group")
     try:
         l =[]
         l += p[2]
@@ -838,12 +838,12 @@ def p_expression_value(p):
                   | SWITCH8
                   | NEWIRQ
                   | SERIAL'''
-    print " # pyYacc -> p_expression_value"
+    print(" # pyYacc -> p_expression_value")
     try: 
         p.lineno(1)
         l =[]
         if isinstance(p[1],int):
-            print 'numero literal'
+            print('numero literal')
             if p[1] < 256:
                 l.append(1) #é um byte
                 l.append(p[1])
@@ -893,11 +893,11 @@ def p_expression_value(p):
             l.append(21)
         elif p[1] == 'serial':
             l.append(82)
-        elif p[1] in globais.keys():
+        elif p[1] in list(globais.keys()):
             l += globais.get(p[1])
         else:
             #raise SyntaxError, _('Valor não identificado: %s') % p[1]  
-            raise SyntaxError, _('Not identified: %s') % p[1]  
+            raise SyntaxError(_('Not identified: %s') % p[1])  
             l = p[1]   
         p[0] = l
     except ValueError:
@@ -907,7 +907,7 @@ def p_expression_value(p):
 def p_parm_value(p):
     '''parm : parm expression
     		| expression'''
-    print " # pyYacc -> p_parm_value %s" % p[1:]
+    print(" # pyYacc -> p_parm_value %s" % p[1:])
     l=[]
     size=len(p[1:])#get the size of the list 'parm+expression'
     for i in range(1,size+1):
@@ -916,17 +916,17 @@ def p_parm_value(p):
 
 def p_procedurecall_parm(p):
     '''procedurecall : PROCEDURENAME parm'''					
-    print " # pyYacc -> p_procedurecall_parm"
+    print(" # pyYacc -> p_procedurecall_parm")
     global RECOMPILE
     global errMsgFunc
     
     l=[]
     l.append(128) #SET_PTR_HI_BYTE
     pos=nomeprocs.get(p[1])
-    print 'jump pos: ','(',pos,')'
-    print nomeprocs
+    print('jump pos: ','(',pos,')')
+    print(nomeprocs)
     if not p[1] in nomeprocs:
-        print '**********NEED TO RECOMPILE************'
+        print('**********NEED TO RECOMPILE************')
         if errMsgFunc:
             errMsgFunc(_("Line %(line)d: Unresolved symbol '%(msg)s'") % {'line': p.lineno(1), 'msg': p[1]})
         RECOMPILE=True
@@ -935,16 +935,16 @@ def p_procedurecall_parm(p):
 
 def p_procedurecall(p):
     '''procedurecall : PROCEDURENAME'''
-    print " # pyYacc -> p_procedurecall ('%s')" % p[1]
+    print(" # pyYacc -> p_procedurecall ('%s')" % p[1])
     global RECOMPILE
     global errMsgFunc
     
     l=[]
     l.append(128) #SET_PTR
     pos=nomeprocs.get(p[1])
-    print 'jump pos: ','(',pos,')'
+    print('jump pos: ','(',pos,')')
     if not p[1] in nomeprocs:
-        print '**********NEED TO RECOMPILE************'
+        print('**********NEED TO RECOMPILE************')
         if errMsgFunc:
             errMsgFunc(_("Line %(line)d: Unresolved symbol '%(msg)s'") % {'line': p.lineno(1), 'msg': p[1]})
         RECOMPILE=True
@@ -965,7 +965,7 @@ def find_column(token):
 def p_error(p):
     global errMsgFunc
 
-    print "# pyYacc -> p_error ('%s')" % p
+    print("# pyYacc -> p_error ('%s')" % p)
     if not (p == None):
         m = msgErro(p.lineno, p.lexpos, p.value)
         # Column calc near impossible for proportional text (esp with tabs)
@@ -977,7 +977,7 @@ def p_error(p):
     m = _("Error in last line")
     if errMsgFunc:
         errMsgFunc(m)
-    raise SyntaxError, m
+    raise SyntaxError(m)
 
 def highByte(number):
     return ((number >> 8) & 0xff)
@@ -999,7 +999,7 @@ def msgErro(numLine, numPos, value, errMsg=_("Line %(line)d: Syntax Error '%(msg
 
 def codigoIntermediario(list):
     #print _("Codigo intermediario: %s") % list
-    print _("Intermediate Code: %s") % list
+    print(_("Intermediate Code: %s") % list)
 
 def codigoFinal(list):
     s=""
@@ -1007,7 +1007,7 @@ def codigoFinal(list):
         s = s + chr(i)
     
     #print _("Código Final: %s") % s
-    print _("Final Code: %s") % s
+    print(_("Final Code: %s") % s)
     return s
 
 #def analisarCodigo(codigo):
@@ -1043,7 +1043,7 @@ def codigoFinal(list):
 
 
 def analisarCodigo(codigo, errMsgFunction=None):
-    print " # pyYacc -> analisarCodigo"
+    print(" # pyYacc -> analisarCodigo")
     #limpa lista de variaveis
     del variaveis[:]
     
@@ -1057,15 +1057,15 @@ def analisarCodigo(codigo, errMsgFunction=None):
     errMsgFunc = errMsgFunction
      
     src_code = codigo
-    print src_code
+    print(src_code)
     
     size=0
     nomeprocs={}
     #Para usar os analisadores juntos é necessário passar o léxico para dentro do parser.
     Lexer = pyLex.build(optimize=1, debug=0)
-    print "    pyLex.build() ended"
+    print("    pyLex.build() ended")
     parser = yacc.yacc(optimize=1, debug=0)
-    print "    yacc.yacc() ended"
+    print("    yacc.yacc() ended")
     
     pyLex.setErrMsgFunc(errMsgFunc)
     
@@ -1073,7 +1073,7 @@ def analisarCodigo(codigo, errMsgFunction=None):
         errMsgFunc('***BEGIN***')
     result = parser.parse(src_code.lower(), lexer=Lexer, debug=0, tracking=True)
     if RECOMPILE:
-        print 'RECOMPILE'
+        print('RECOMPILE')
         size=0
         if errMsgFunc:
             errMsgFunc('***BEGIN***')
@@ -1082,5 +1082,5 @@ def analisarCodigo(codigo, errMsgFunction=None):
     if errMsgFunc:
         errMsgFunc('***END***')
     
-    print "    parse.parse() generated result '%s'" % result
+    print("    parse.parse() generated result '%s'" % result)
     return result

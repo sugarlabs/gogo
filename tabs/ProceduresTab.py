@@ -29,14 +29,13 @@ from gettext import gettext as _
 
 
 try:
-    import gtk
+    from gi.repository import Gtk
 except ImportError:
     #print _('GTK+ Runtime Enviromnt precisa ser instalado:')
-    print _('GTK+ Runtime Enviroment needs to be installed:')
-    print "http://downloads.sourceforge.net/gladewin32/gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0"
-    raw_input()
+    print((_('GTK+ Runtime Enviroment needs to be installed:')))
+    print("http://downloads.sourceforge.net/gladewin32/Gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0")
     
-from Tab import Tab
+from .Tab import Tab
 
 from pyLogoCompiler.Exceptions import *
 
@@ -49,11 +48,11 @@ import traceback
 
 def logexception(type, value, tb):
     text = ' '.join(t for t in traceback.format_exception(type, value, tb))
-    print text
+    print(text)
     try:
-        dialog = gtk.MessageDialog(None, gtk.DIALOG_MODAL, \
-                                         gtk.MESSAGE_INFO, \
-                                         gtk.BUTTONS_OK, \
+        dialog = Gtk.MessageDialog(None, Gtk.DIALOG_MODAL, \
+                                         Gtk.MESSAGE_INFO, \
+                                         Gtk.BUTTONS_OK, \
                                          text)
         dialog.run()
         dialog.destroy()
@@ -78,12 +77,12 @@ class ProceduresTab(Tab):
         self.activity = activity
         
         self.logoFilename = ""
-        self.tvLogoProcedures = self.gui.get_widget('textviewLogoProcedures')
-        self.LogoProceduresBuffer = gtk.TextBuffer()
+        self.tvLogoProcedures = self.gui.get_object('textviewLogoProcedures')
+        self.LogoProceduresBuffer = Gtk.TextBuffer()
         self.tvLogoProcedures.set_buffer(self.LogoProceduresBuffer)
         
-        self.tvCompilerMessages = self.gui.get_widget('textviewCompilerMessages')
-        self.compilerMessagesBuffer = gtk.TextBuffer()
+        self.tvCompilerMessages = self.gui.get_object('textviewCompilerMessages')
+        self.compilerMessagesBuffer = Gtk.TextBuffer()
         self.tvCompilerMessages.set_buffer(self.compilerMessagesBuffer)
 
         #if not self.activity:
@@ -103,12 +102,12 @@ class ProceduresTab(Tab):
         self.logoFilename=""
         
     def buttonOpen_clicked_cb(self,widget):
-        #dialog = gtk.FileChooserDialog(_("Abrir.."), None, gtk.FILE_CHOOSER_ACTION_OPEN,
-        dialog = gtk.FileChooserDialog(_("Open.."), None, gtk.FILE_CHOOSER_ACTION_OPEN,
-        (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_OPEN, gtk.RESPONSE_OK))        
-        dialog.set_default_response(gtk.RESPONSE_OK)
+        #dialog = Gtk.FileChooserDialog(_("Abrir.."), None, Gtk.FILE_CHOOSER_ACTION_OPEN,
+        dialog = Gtk.FileChooserDialog(_("Open.."), None, Gtk.FILE_CHOOSER_ACTION_OPEN,
+        (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_OPEN, Gtk.RESPONSE_OK))        
+        dialog.set_default_response(Gtk.RESPONSE_OK)
         response = dialog.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.RESPONSE_OK:
             try:
                 self.logoFilename = dialog.get_filename()
                 FILE = open(self.logoFilename,"r")
@@ -125,12 +124,12 @@ class ProceduresTab(Tab):
 #            return
         
         if self.logoFilename=="":
-            #dialog = gtk.FileChooserDialog(_("Salvar.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            dialog = gtk.FileChooserDialog(_("Save.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_SAVE, gtk.RESPONSE_OK))        
-            dialog.set_default_response(gtk.RESPONSE_OK)
+            #dialog = Gtk.FileChooserDialog(_("Salvar.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            dialog = Gtk.FileChooserDialog(_("Save.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_SAVE, Gtk.RESPONSE_OK))        
+            dialog.set_default_response(Gtk.RESPONSE_OK)
             response = dialog.run()
-            if response == gtk.RESPONSE_OK:
+            if response == Gtk.RESPONSE_OK:
                 self.logoFilename = dialog.get_filename()        
             dialog.destroy()
         
@@ -142,12 +141,12 @@ class ProceduresTab(Tab):
             self.showError(e.__str__())
         
     def buttonSaveAs_clicked_cb(self,widget):
-        #dialog = gtk.FileChooserDialog(_("Salvar Como.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-        dialog = gtk.FileChooserDialog(_("Save As.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-        (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_SAVE, gtk.RESPONSE_OK))        
-        dialog.set_default_response(gtk.RESPONSE_OK)
+        #dialog = Gtk.FileChooserDialog(_("Salvar Como.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+        dialog = Gtk.FileChooserDialog(_("Save As.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+        (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_SAVE, Gtk.RESPONSE_OK))        
+        dialog.set_default_response(Gtk.RESPONSE_OK)
         response = dialog.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.RESPONSE_OK:
             self.logoFilename = dialog.get_filename()
             dialog.destroy()
             try:
@@ -222,7 +221,7 @@ class ProceduresTab(Tab):
                 self.logCompilerMessages('***END***')
                 self.showError(_('Error/s: Check Messages'))
             else:
-                #self.showError("Erro no carregamento do código.",self.gui.get_widget('mainWindow'))
+                #self.showError("Erro no carregamento do código.",self.gui.get_object('mainWindow'))
                 self.statusbar.push(0,_("Code successfully compiled."))
     
                 try: # DOWNLOAD
@@ -232,7 +231,7 @@ class ProceduresTab(Tab):
                 except:
                     self.showError(_("Error communicating"))
                 else:
-                    self.showInfo(_("Code successfully downloaded."), self.gui.get_widget('mainWindow'))
+                    self.showInfo(_("Code successfully downloaded."), self.gui.get_object('mainWindow'))
                     #self.statusbar.push(0,_("Code successfully downloaded."))
         
     

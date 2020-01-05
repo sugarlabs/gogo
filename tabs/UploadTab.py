@@ -27,20 +27,22 @@ if os.name=='nt':
 
 from gettext import gettext as _
 
+import gi
+gi.require_version('Pango', '1.0')
 
 try:
-    import gtk
+    from gi.repository import Gtk
 except ImportError:
     #print _('GTK+ Runtime Enviromnt precisa ser instalado:')
-    print _('GTK+ Runtime Enviroment needs to be installed:')
-    print "http://downloads.sourceforge.net/gladewin32/gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0"
-    raw_input()
+    print((_('GTK+ Runtime Enviroment needs to be installed:')))
+    print("http://downloads.sourceforge.net/gladewin32/Gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0")
+    eval(input())
     
-from Tab import Tab
+from .Tab import Tab
 
 from pyLogoCompiler.Exceptions import ConnectionProblem
 
-import pango
+from gi.repository import Pango
 
 from cairoplot import plots
 from cairoplot.series import Series
@@ -54,11 +56,11 @@ import traceback
 
 def logexception(type, value, tb):
     text = ' '.join(t for t in traceback.format_exception(type, value, tb))
-    print text
+    print(text)
     try:
-        dialog = gtk.MessageDialog(None, gtk.DIALOG_MODAL, \
-                                         gtk.MESSAGE_INFO, \
-                                         gtk.BUTTONS_OK, \
+        dialog = Gtk.MessageDialog(None, Gtk.DIALOG_MODAL, \
+                                         Gtk.MESSAGE_INFO, \
+                                         Gtk.BUTTONS_OK, \
                                          text)
         dialog.run()
         dialog.destroy()
@@ -88,23 +90,23 @@ class UploadTab(Tab):
         self.colDataRaw = []
         self.colDataMapped = []
         
-        self.textviewData = self.gui.get_widget('textviewData')
-        self.textviewData.modify_font(pango.FontDescription('monospace'))
-        self.textviewBuffer = gtk.TextBuffer()
+        self.textviewData = self.gui.get_object('textviewData')
+        self.textviewData.modify_font(Pango.FontDescription('monospace'))
+        self.textviewBuffer = Gtk.TextBuffer()
         self.textviewData.set_buffer(self.textviewBuffer)
 
-        self.spinbuttonColumns = self.gui.get_widget('spinbuttonColumns')
+        self.spinbuttonColumns = self.gui.get_object('spinbuttonColumns')
 
-        self.checkbuttonShowHeaders   = self.gui.get_widget('checkbuttonShowHeaders')
-        self.checkbuttonTwoLineHeader = self.gui.get_widget('checkbuttonTwoLineHeader')
+        self.checkbuttonShowHeaders   = self.gui.get_object('checkbuttonShowHeaders')
+        self.checkbuttonTwoLineHeader = self.gui.get_object('checkbuttonTwoLineHeader')
         
-        self.progressbar = self.gui.get_widget('progressbarUpload')
-        self.lblProgress = self.gui.get_widget('labelValuesUploaded')
+        self.progressbar = self.gui.get_object('progressbarUpload')
+        self.lblProgress = self.gui.get_object('labelValuesUploaded')
         self.uploadTotal = 0
         
         self.colSpec = []
         for c in range(8):
-            w = self.gui.get_widget('comboboxC%i' % c)
+            w = self.gui.get_object('comboboxC%i' % c)
             w.set_active(0)
             w.set_sensitive(c == 0)
             w.set_model(liststoreSensorsTypes)
@@ -126,17 +128,17 @@ class UploadTab(Tab):
         self.graphVisible = False
         self.graphUpdateRequired = False
         
-        self.notebookDataView = self.gui.get_widget('notebookDataView')
+        self.notebookDataView = self.gui.get_object('notebookDataView')
         #self.notebookDataView.set_current_page(0)
        
 
     def buttonStartUpload_clicked_cb(self,widget):
-        print "uploading"
+        print("uploading")
         try:
             self.progressbar.set_fraction(0.0)
             self.lblProgress.set_text(_('%i Values Uploaded' % 0))
-            while gtk.events_pending():
-                gtk.main_iteration(False)
+            while Gtk.events_pending():
+                Gtk.main_iteration(False)
             self.data = self.GoGo.autoUpload(self.uploadProgress_cb)
         except ConnectionProblem:
             self.showWarning(_("Check GoGo plugged in, turned on and connected"))
@@ -147,7 +149,7 @@ class UploadTab(Tab):
         else:
             self.lblProgress.set_text(_('%i Values Uploaded' % len(self.data)))
             self.refreshTextView()
-            self.showInfo(_("Data successfully uploaded."), self.gui.get_widget('mainWindow'))
+            self.showInfo(_("Data successfully uploaded."), self.gui.get_object('mainWindow'))
         
     
     def buttonSaveData_clicked_cb(self,widget):
@@ -158,11 +160,11 @@ class UploadTab(Tab):
 #            self.activity.save()
 #            return
         
-        dialog = gtk.FileChooserDialog(_("Save As.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-        (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_SAVE, gtk.RESPONSE_OK))        
-        dialog.set_default_response(gtk.RESPONSE_OK)
+        dialog = Gtk.FileChooserDialog(_("Save As.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+        (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_SAVE, Gtk.RESPONSE_OK))        
+        dialog.set_default_response(Gtk.RESPONSE_OK)
         response = dialog.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.RESPONSE_OK:
             self.dataFilename = dialog.get_filename()
             try:
                 FILE = open(self.dataFilename,"w")
@@ -299,9 +301,9 @@ class UploadTab(Tab):
         t = self.displayHeaders()
         
         if len(self.colDataMapped) == 1:
-            d = zip(self.colDataMapped[0])
+            d = list(zip(self.colDataMapped[0]))
         else:
-            d = zip(*self.colDataMapped)
+            d = list(zip(*self.colDataMapped))
 
         for r,rowData in enumerate(d):
             for c,v in enumerate(rowData):
@@ -337,7 +339,7 @@ class UploadTab(Tab):
         if not (self.graphVisible and self.graphUpdateRequired): return
         
         if self.graphContainer == None:
-            self.graphContainer = self.gui.get_widget("dataGraphContainer")
+            self.graphContainer = self.gui.get_object("dataGraphContainer")
             if self.graphContainer == None: return
             r = self.graphContainer.get_allocation()
             self.graphWidth, self.graphHeight = (r.width,r.height)
@@ -359,7 +361,7 @@ class UploadTab(Tab):
         if self.graph != None:
             self.graphContainer.remove(self.graph.handler)
         
-        self.graph = plots.DotLinePlot('gtk', data=data, x_labels=xLabels,
+        self.graph = plots.DotLinePlot('Gtk', data=data, x_labels=xLabels,
                 width=self.graphWidth, height=self.graphHeight, background="white",
                 border=5, axis=True, grid=True, series_legend = True)
         
@@ -370,6 +372,6 @@ class UploadTab(Tab):
     def uploadProgress_cb(self, count, total):
         self.progressbar.set_fraction(float(count) / total)
         self.lblProgress.set_text(_('%i Values Uploaded' % count))
-        while gtk.events_pending():
-            gtk.main_iteration(False)
+        while Gtk.events_pending():
+            Gtk.main_iteration(False)
     

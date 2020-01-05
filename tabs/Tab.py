@@ -21,12 +21,12 @@
 # Esse código faz parte do projeto BR-Gogo, disponível em http://sourceforge.net/projects/br-gogo/
 
 try:
-	import gtk
+	from gi.repository import Gtk
 except ImportError:
 	#print _('GTK+ Runtime Enviromnt precisa ser instalado:')
-	print _('GTK+ Runtime Enviroment needs to be installed:')
-	print "http://downloads.sourceforge.net/gladewin32/gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0"
-	raw_input()
+	print((_('GTK+ Runtime Enviroment needs to be installed:')))
+	print("http://downloads.sourceforge.net/gladewin32/Gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0")
+	eval(input())
 	
 
 class Tab(object):
@@ -34,17 +34,17 @@ class Tab(object):
 		pass
 		
 	def showDialog(self,text,dialog_type,parent):
-		dialog = gtk.MessageDialog(parent, gtk.DIALOG_MODAL, dialog_type, gtk.BUTTONS_OK, text)
+		dialog = Gtk.MessageDialog(parent, Gtk.DIALOG_MODAL, dialog_type, Gtk.BUTTONS_OK, text)
 		dialog.run()
 		dialog.destroy()
 	def showInfo(self,text,parent=None):
-		self.showDialog(text,gtk.MESSAGE_INFO,parent)
+		self.showDialog(text,Gtk.MESSAGE_INFO,parent)
 	def showWarning(self,text,parent=None):
-		self.showDialog(text,gtk.MESSAGE_WARNING,parent)
+		self.showDialog(text,Gtk.MESSAGE_WARNING,parent)
 	def showError(self,text,parent=None):
-		self.showDialog(text,gtk.MESSAGE_ERROR,parent)
+		self.showDialog(text,Gtk.MESSAGE_ERROR,parent)
 		
-#gtk.MESSAGE_INFO
-#gtk.MESSAGE_WARNING	
-#gtk.MESSAGE_QUESTION
-#gtk.MESSAGE_ERROR
+#Gtk.MESSAGE_INFO
+#Gtk.MESSAGE_WARNING	
+#Gtk.MESSAGE_QUESTION
+#Gtk.MESSAGE_ERROR

@@ -25,15 +25,15 @@ import sys
 from gettext import gettext as _
 
 try:
-    from kiwi import tasklet
+    from .kiwi import tasklet
 except ImportError:
     #print _('Kiwi precisa ser instalado:')
-    print _('Kiwi needs to be installed:')
-    print "http://ftp.gnome.org/pub/GNOME/binaries/win32/kiwi/kiwi-1.9.21.win32.exe"
-    raw_input()
+    print((_('Kiwi needs to be installed:')))
+    print("http://ftp.gnome.org/pub/GNOME/binaries/win32/kiwi/kiwi-1.9.21.win32.exe")
+    eval(input())
     sys.exit(1)
     
-from Tab import Tab
+from .Tab import Tab
 #from tabs.ConfigTab import ConfigTab
 
 
@@ -44,70 +44,70 @@ class ConsoleTab(Tab):
         self.gui = gui
         self.GoGo = GoGo
         self.statusbar = statusbar
-        self.labelConnected = self.gui.get_widget("labelConnected")
+        self.labelConnected = self.gui.get_object("labelConnected")
         self.sensorTypes = sensorTypes
         
-        self.motorA=gui.get_widget("checkbuttonMotorA")
-        self.motorB=gui.get_widget("checkbuttonMotorB")
-        self.motorC=gui.get_widget("checkbuttonMotorC")
-        self.motorD=gui.get_widget("checkbuttonMotorD")    
-        self.motorPowerWidget=gui.get_widget("spinbuttonMotorPower")
+        self.motorA=gui.get_object("checkbuttonMotorA")
+        self.motorB=gui.get_object("checkbuttonMotorB")
+        self.motorC=gui.get_object("checkbuttonMotorC")
+        self.motorD=gui.get_object("checkbuttonMotorD")    
+        self.motorPowerWidget=gui.get_object("spinbuttonMotorPower")
         
-        self.entryMinPwmDuty=gui.get_widget("entryMinPwmDuty")
-        self.entryMaxPwmDuty=gui.get_widget("entryMaxPwmDuty")
-        self.hscalePwmDuty=gui.get_widget("hscalePwmDuty")
+        self.entryMinPwmDuty=gui.get_object("entryMinPwmDuty")
+        self.entryMaxPwmDuty=gui.get_object("entryMaxPwmDuty")
+        self.hscalePwmDuty=gui.get_object("hscalePwmDuty")
         # Good limits for servos
         self.minDuty=20
         self.maxDuty=45
         self.hscalePwmDuty.set_range(self.minDuty,self.maxDuty)
         self.motorsActivated=""
-        self.buttonSetPwmDuty=gui.get_widget("buttonSetPwmDuty")
+        self.buttonSetPwmDuty=gui.get_object("buttonSetPwmDuty")
         
-        self.radiobuttonBurstFast=gui.get_widget("radiobuttonBurstFast")
-        self.radiobuttonBurstSlow=gui.get_widget("radiobuttonBurstSlow")
-        self.entryRefreshRate=gui.get_widget("entryRefreshRate")
+        self.radiobuttonBurstFast=gui.get_object("radiobuttonBurstFast")
+        self.radiobuttonBurstSlow=gui.get_object("radiobuttonBurstSlow")
+        self.entryRefreshRate=gui.get_object("entryRefreshRate")
         
         self.sensorBars=(
-        gui.get_widget("progressbar1"),
-        gui.get_widget("progressbar2"),
-        gui.get_widget("progressbar3"),
-        gui.get_widget("progressbar4"),
-        gui.get_widget("progressbar5"),
-        gui.get_widget("progressbar6"),
-        gui.get_widget("progressbar7"),
-        gui.get_widget("progressbar8"),
+        gui.get_object("progressbar1"),
+        gui.get_object("progressbar2"),
+        gui.get_object("progressbar3"),
+        gui.get_object("progressbar4"),
+        gui.get_object("progressbar5"),
+        gui.get_object("progressbar6"),
+        gui.get_object("progressbar7"),
+        gui.get_object("progressbar8"),
         )
         
         self.entrySensors=(
-        gui.get_widget("entrySensor1"),
-        gui.get_widget("entrySensor2"),
-        gui.get_widget("entrySensor3"),
-        gui.get_widget("entrySensor4"),
-        gui.get_widget("entrySensor5"),
-        gui.get_widget("entrySensor6"),
-        gui.get_widget("entrySensor7"),
-        gui.get_widget("entrySensor8"),
+        gui.get_object("entrySensor1"),
+        gui.get_object("entrySensor2"),
+        gui.get_object("entrySensor3"),
+        gui.get_object("entrySensor4"),
+        gui.get_object("entrySensor5"),
+        gui.get_object("entrySensor6"),
+        gui.get_object("entrySensor7"),
+        gui.get_object("entrySensor8"),
         )
         self.checkbuttonSensors=(
-        gui.get_widget("checkbuttonSensor1"),
-        gui.get_widget("checkbuttonSensor2"),
-        gui.get_widget("checkbuttonSensor3"),
-        gui.get_widget("checkbuttonSensor4"),
-        gui.get_widget("checkbuttonSensor5"),
-        gui.get_widget("checkbuttonSensor6"),
-        gui.get_widget("checkbuttonSensor7"),
-        gui.get_widget("checkbuttonSensor8")
+        gui.get_object("checkbuttonSensor1"),
+        gui.get_object("checkbuttonSensor2"),
+        gui.get_object("checkbuttonSensor3"),
+        gui.get_object("checkbuttonSensor4"),
+        gui.get_object("checkbuttonSensor5"),
+        gui.get_object("checkbuttonSensor6"),
+        gui.get_object("checkbuttonSensor7"),
+        gui.get_object("checkbuttonSensor8")
         )
         
         self.comboboxSensors=(
-        gui.get_widget("comboboxSensor1"),
-        gui.get_widget("comboboxSensor2"),
-        gui.get_widget("comboboxSensor3"),
-        gui.get_widget("comboboxSensor4"),
-        gui.get_widget("comboboxSensor5"),
-        gui.get_widget("comboboxSensor6"),
-        gui.get_widget("comboboxSensor7"),
-        gui.get_widget("comboboxSensor8")    
+        gui.get_object("comboboxSensor1"),
+        gui.get_object("comboboxSensor2"),
+        gui.get_object("comboboxSensor3"),
+        gui.get_object("comboboxSensor4"),
+        gui.get_object("comboboxSensor5"),
+        gui.get_object("comboboxSensor6"),
+        gui.get_object("comboboxSensor7"),
+        gui.get_object("comboboxSensor8")    
         )
         for i in self.comboboxSensors:
             i.set_model(liststoreSensorsTypes)
@@ -148,7 +148,7 @@ class ConsoleTab(Tab):
 
     def runCommand(self,command,context,msg):
         try:
-            print ">>> runCommand(" + msg + ")"
+            print((">>> runCommand(" + msg + ")"))
             command()
             self.showStatusMsg(context,msg)
         except:
@@ -275,7 +275,7 @@ class ConsoleTab(Tab):
             try:
                 self.hscalePwmDuty.set_range(self.minDuty,self.maxDuty)
             except:
-                print self.minDuty,self.maxDuty            
+                print((self.minDuty,self.maxDuty))            
         
     def entryMaxPwmDuty_changed_cb(self,widget):
         try:
@@ -290,7 +290,7 @@ class ConsoleTab(Tab):
             try:
                 self.hscalePwmDuty.set_range(self.minDuty,self.maxDuty)
             except:
-                print self.minDuty,self.maxDuty
+                print((self.minDuty,self.maxDuty))
     
     def buttonSetPwmDuty_clicked_cb(self,widget):
         try:
