@@ -40,9 +40,9 @@ serialPort = None
 # ============================================================
 
 def printFunctionName(caller=""):
-    if caller <> "":
-        print ">>>", caller
-    print ">>> " + sys._getframe(1).f_code.co_name + "()"
+    if caller != "":
+        print(">>>", caller)
+    print(">>> " + sys._getframe(1).f_code.co_name + "()")
 
 def callerName():
     return sys._getframe(2).f_code.co_name + "()"
@@ -108,12 +108,12 @@ class SerialIF:
 
     def openPort(self):
         try:
-            print "opening port..."
+            print("opening port...")
             serialPort.open()
-            print "port opened"
+            print("port opened")
             return True
         except serial.serialutil.SerialException:
-            print "serial.serialutil.SerialException"
+            print("serial.serialutil.SerialException")
             return False
 
     def closePort(self):
@@ -130,7 +130,7 @@ class SerialIF:
         serialPort.write(chr(135))
         i = serialPort.read(1);
         if i == -1:
-            print "< Cannot find serial interface"
+            print("< Cannot find serial interface")
             return False
         serialPort.write(chr(0))
         j = serialPort.read(1);
@@ -169,16 +169,16 @@ class SerialIF:
         else:
             available = self.scanUnix()
             available.remove('/dev/ttyS0') # Internal to XO
-        print "< Ports found:", available
+        print("< Ports found:", available)
         for i in available:
-            print "< Trying port: ",i
+            print("< Trying port: ",i)
             serialPort.port = i
             if self.openPort():
                 if self.checkConnection():
-                    print "< Connected on port:", i
+                    print("< Connected on port:", i)
                     return True
                 else:
-                    print "< Failed to connect to: ", i
+                    print("< Failed to connect to: ", i)
         
         return False
     
@@ -262,7 +262,7 @@ class CricketIF():
 
     def writeBytesToCricketMemory(self, ptr, bytes):
         printFunctionName()
-        print "< Bytes: ", bytes
+        print("< Bytes: ", bytes)
         try:
             # Shouldn't this be "(ptr + len(bytes) < ADDR_CODE_END" ???
             if len(bytes) < CricketIF.ADDR_CODE_END:
@@ -273,7 +273,7 @@ class CricketIF():
                     serialPortIF.txByteRxEcho(bytes[i] % 256)
                     serialPortIF.rxOneByte() # Extra echo byte!
         except:
-            print "< Problem sending data"
+            print("< Problem sending data")
             raise Exceptions.CommunicationProblem
 
 
@@ -314,13 +314,13 @@ class CricketIF():
         printFunctionName()
         self.byteCode = pyYacc.analisarCodigo(logoCode, ErrMsgFunc)
         self.byteCodeCount = len(self.byteCode)
-        print "< code:", self.byteCode
+        print("< code:", self.byteCode)
 
 
     def download(self):
         printFunctionName()
         if not serialPortIF.checkConnection():
-            print "< Gogo disconnected"
+            print("< Gogo disconnected")
             #self.showInfo(_("Gogo disconnected"))
             #return False
             raise Exceptions.ConnectionProblem
@@ -398,28 +398,28 @@ class GoGoIF:
         
         cmd_response = serialPortIF.rxBytes(len(command))
         if cmd_response == '':
-            print "< No response to command"
+            print("< No response to command")
             return False
         ack_response = serialPortIF.rxBytes(3)
         
-        print cmd_response, command
-        print ack_response, GoGoIF.HDR_ACK
+        print(cmd_response, command)
+        print(ack_response, GoGoIF.HDR_ACK)
         
         if flush:
             serialPortIF.flush()
         
         #print cmd_response,ack_response
         if cmd_response == command and ack_response == GoGoIF.HDR_ACK:
-            print "< Command successfully sent"
+            print("< Command successfully sent")
             return True
 
-        print "< Error: cmd_response or ack_response"
+        print("< Error: cmd_response or ack_response")
         return False
 
 
     def readSensor(self, sensorNumber=0):
         if sensorNumber >= GoGoIF.NUMBER_OF_SENSORS:
-            print "readSensor(): Sensor does not exist:",sensorNumber
+            print("readSensor(): Sensor does not exist:",sensorNumber)
             return -1
         
         command = GoGoIF.HDR_SEND + tuple([GoGoIF.CMD_READ_SENSOR + (sensorNumber << 2)])
@@ -429,7 +429,7 @@ class GoGoIF:
         ack = serialPortIF.rxBytes(2)
         
         if not (cmd_response == command and ack == tuple(GoGoIF.HDR_ACK[:2])):
-            print "readSensor(): Error reading sensor:",sensorNumber
+            print("readSensor(): Error reading sensor:",sensorNumber)
             #print command,"!=",cmd_response
             #print ack,"!=",tuple(GoGoIF.HDR_ACK[:2])                     
             serialPortIF.flush()
@@ -508,7 +508,7 @@ class GoGoIF:
     def autoUpload(self, progress_cb=None):
         printFunctionName()
         if not serialPortIF.checkConnection():
-            print "< Gogo disconnected"
+            print("< Gogo disconnected")
             #self.showInfo(_("Gogo disconnected"))
             #return False
             raise Exceptions.ConnectionProblem
@@ -516,7 +516,7 @@ class GoGoIF:
         recData = []
         
         if not self.sendCmd(GoGoIF.CMD_AUTO_UPLOAD, flush=False):
-            print "autoUpload: 1"
+            print("autoUpload: 1")
             return recData
         
         #    3. The Gogo will send four bytes. 0xEE, 0x11, uploadLen (low byte),
@@ -525,7 +525,7 @@ class GoGoIF:
         
         # Rx upload-length header bytes (2)
         hdr = serialPortIF.rxBytes(2)
-        print "hdr",hdr
+        print("hdr",hdr)
         dataBytes = serialPortIF.rx16BitValueLSBFirst()
         dataWords = dataBytes / 2
         if dataWords > 0:

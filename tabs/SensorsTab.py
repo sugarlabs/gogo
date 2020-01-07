@@ -23,16 +23,15 @@
 from gettext import gettext as _
 
 try:
-    import gtk
+    from gi.repository import Gtk
 except ImportError:
     #print _('GTK+ Runtime Enviromnt precisa ser instalado:')
-    print _('GTK+ Runtime Enviroment needs to be installed:')
-    print "http://downloads.sourceforge.net/gladewin32/gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0"
-    raw_input()
+    print((_('GTK+ Runtime Enviroment needs to be installed:')))
+    print("http://downloads.sourceforge.net/gladewin32/Gtk-2.12.9-win32-1.exe?modtime=1208401479&big_mirror=0")
 
-from ConfigParser import ConfigParser
+from configparser import ConfigParser
 import pickle
-from Tab import Tab
+from .Tab import Tab
 
 
 from cairoplot import plots
@@ -40,7 +39,7 @@ from cairoplot import plots
 
 # import matplotlib
 # from matplotlib.figure import Figure
-# from matplotlib.backends.backend_gtk import FigureCanvasGTK as FigureCanvas
+# from matplotlib.backends.backend_Gtk import FigureCanvasGTK as FigureCanvas
 # matplotlib.use('Cairo')
 # from pylab import *
 # from numpy import arange, sin, pi
@@ -62,20 +61,20 @@ class SensorsTab(Tab):
                 self.sensorTypes = pickle.load(self.sensorsFile)
             except:
                 #print _("Arquivo de configuração de sensores corrompido ou vazio.")
-                print _("Sensor configuration file corrupted or empty.")
+                print((_("Sensor configuration file corrupted or empty.")))
                 self.sensorTypes = []
                 self.create_default_sensor()
             self.sensorsFile.close()
         except:
             #print _("Arquivo de configuração de sensores não existe.")
-            print _("Sensor configuration file does not exist.")
+            print((_("Sensor configuration file does not exist.")))
             self.sensorTypes=[]
             self.create_default_sensor()
         
-        self.labelSensorNameUnits    = self.gui.get_widget("labelSensorNameUnits")
-        self.labelSensorDescription = self.gui.get_widget("labelSensorDescription")
+        self.labelSensorNameUnits    = self.gui.get_object("labelSensorNameUnits")
+        self.labelSensorDescription = self.gui.get_object("labelSensorDescription")
         
-        #self.vboxGraphic=self.gui.get_widget("vboxGraphic")
+        #self.vboxGraphic=self.gui.get_object("vboxGraphic")
         #f = Figure(figsize=(5,4), dpi=100)
         #self.ax= f.add_subplot(111)
         #t = arange(0.0,3.0,0.01)
@@ -83,21 +82,21 @@ class SensorsTab(Tab):
         #self.ax.plot(t,s)
         #canvas = FigureCanvas(f)
         #self.vboxGraphic.add(canvas)
-        #self.drawingareaGraphic=self.gui.get_widget("drawingareaGraphic")
+        #self.drawingareaGraphic=self.gui.get_object("drawingareaGraphic")
             
-        self.treeviewSensors=self.gui.get_widget("treeviewSensors")
+        self.treeviewSensors=self.gui.get_object("treeviewSensors")
         
         for sensor in self.sensorTypes:
             self.liststore.append([sensor.name,sensor.unit,sensor.description])
                 
-        #self.treemodelsort = gtk.TreeModelSort(self.liststore)
-        #self.treemodelsort.set_sort_column_id(0, gtk.SORT_ASCENDING)
+        #self.treemodelsort = Gtk.TreeModelSort(self.liststore)
+        #self.treemodelsort.set_sort_column_id(0, Gtk.SORT_ASCENDING)
         #self.treeviewSensors.set_model(self.treemodelsort)
         self.treeviewSensors.set_model(self.liststore)
         
-        cellrendererName        = gtk.CellRendererText()
-        cellrendererUnit        = gtk.CellRendererText()
-        cellrendererDescription = gtk.CellRendererText()
+        cellrendererName        = Gtk.CellRendererText()
+        cellrendererUnit        = Gtk.CellRendererText()
+        cellrendererDescription = Gtk.CellRendererText()
         
         cellrendererName.set_property('editable', True)        
         cellrendererUnit.set_property('editable', True)
@@ -107,9 +106,9 @@ class SensorsTab(Tab):
         cellrendererUnit.connect('edited', self.treeviewSensors_edited_cb,1)
         cellrendererDescription.connect('edited', self.treeviewSensors_edited_cb,2)
         
-        columnName          = gtk.TreeViewColumn(_("Name"), cellrendererName)
-        columnUnit          = gtk.TreeViewColumn(_("Unit"), cellrendererUnit)
-        columnDescription   = gtk.TreeViewColumn(_("Description"), cellrendererDescription)
+        columnName          = Gtk.TreeViewColumn(_("Name"), cellrendererName)
+        columnUnit          = Gtk.TreeViewColumn(_("Unit"), cellrendererUnit)
+        columnDescription   = Gtk.TreeViewColumn(_("Description"), cellrendererDescription)
         
         columnName.add_attribute(cellrendererName,"text",0)
         columnUnit.add_attribute(cellrendererUnit,"text",1)
@@ -120,17 +119,17 @@ class SensorsTab(Tab):
         self.treeviewSensors.append_column(columnDescription)
         
         # Sensor Points:
-        self.treeviewSensorPoints = self.gui.get_widget("treeviewSensorPoints")
-        self.liststoreSensors = gtk.ListStore(str,str)        
+        self.treeviewSensorPoints = self.gui.get_object("treeviewSensorPoints")
+        self.liststoreSensors = Gtk.ListStore(str,str)        
         self.treeviewSensorPoints.set_model(self.liststoreSensors)
-        cellrendererX = gtk.CellRendererText()
-        cellrendererY = gtk.CellRendererText()
+        cellrendererX = Gtk.CellRendererText()
+        cellrendererY = Gtk.CellRendererText()
         cellrendererX.set_property('editable', True)
         cellrendererY.set_property('editable', True)
         cellrendererX.connect('edited', self.sensorPoint_edited_cb,0)
         cellrendererY.connect('edited', self.sensorPoint_edited_cb,1)
-        columnX = gtk.TreeViewColumn(_("X"), cellrendererX)
-        columnY = gtk.TreeViewColumn(_("Y"), cellrendererY)
+        columnX = Gtk.TreeViewColumn(_("X"), cellrendererX)
+        columnY = Gtk.TreeViewColumn(_("Y"), cellrendererY)
         columnX.set_expand(True)
         columnY.set_expand(True)
         columnX.add_attribute(cellrendererX,"text",0)
@@ -150,7 +149,7 @@ class SensorsTab(Tab):
         self.writeSensorsConfig()
     
     def writeSensorsConfig(self):
-        self.sensorsFile=open(SENSOR_TYPES_FILENAME,"w")
+        self.sensorsFile=open(SENSOR_TYPES_FILENAME,"wb")
         pickle.dump(self.sensorTypes,self.sensorsFile)
         self.sensorsFile.close()
     
@@ -163,11 +162,11 @@ class SensorsTab(Tab):
             if column == 0:
                 if int(new_text)<0 or int(new_text)>1023:
                     #print _("O valor lido pelo sensor deve estar entre 0 e 1023")
-                    print _("The light value should be between 0 and 1023")
+                    print((_("The light value should be between 0 and 1023")))
                     return
                 if ([int(new_text),float(self.sensorTypes[sensorNumber].points[pointNumber][1])]) in self.sensorTypes[sensorNumber].points:
                     #print _("O ponto já existe.")
-                    print _("Point already exists.")
+                    print((_("Point already exists.")))
                     return
                 #self.sensorTypes[sensorNumber].points[pointNumber][column]=int(new_text)
                 self.sensorTypes[sensorNumber].edit_point(pointNumber,0,int(new_text))
@@ -175,7 +174,7 @@ class SensorsTab(Tab):
             if column == 1:
                 if ([self.sensorTypes[sensorNumber].points[pointNumber][0],float(new_text)]) in self.sensorTypes[sensorNumber].points:
                     #print _("O ponto já existe.")
-                    print _("Point already exists!")
+                    print((_("Point already exists!")))
                     return
                 self.sensorTypes[sensorNumber].edit_point(pointNumber,1,float(new_text))
             
@@ -241,13 +240,13 @@ class SensorsTab(Tab):
     
     
     def buttonImportSensors_clicked_cb(self,widget):
-        #dialog = gtk.FileChooserDialog(_("Abrir.."), None, gtk.FILE_CHOOSER_ACTION_OPEN,
-        dialog = gtk.FileChooserDialog(_("Open.."), None, gtk.FILE_CHOOSER_ACTION_OPEN,
-        (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_OPEN, gtk.RESPONSE_OK))        
-        dialog.set_default_response(gtk.RESPONSE_OK)
+        #dialog = Gtk.FileChooserDialog(_("Abrir.."), None, Gtk.FILE_CHOOSER_ACTION_OPEN,
+        dialog = Gtk.FileChooserDialog(_("Open.."), None, Gtk.FILE_CHOOSER_ACTION_OPEN,
+        (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_OPEN, Gtk.RESPONSE_OK))        
+        dialog.set_default_response(Gtk.RESPONSE_OK)
         dialog.set_current_folder(dialog.get_current_folder()+"/sensors/")
         response = dialog.run()
-        if response == gtk.RESPONSE_OK:
+        if response == Gtk.RESPONSE_OK:
             filename = dialog.get_filename()
             dialog.destroy()
             try:
@@ -309,14 +308,14 @@ class SensorsTab(Tab):
         if treeiter:
             sensorNumber = int(treemodel.get_path(treeiter)[0])
             
-            #dialog = gtk.FileChooserDialog(_("Salvar.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            dialog = gtk.FileChooserDialog(_("Save.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_SAVE, gtk.RESPONSE_OK))        
-            dialog.set_default_response(gtk.RESPONSE_OK)
+            #dialog = Gtk.FileChooserDialog(_("Salvar.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            dialog = Gtk.FileChooserDialog(_("Save.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_SAVE, Gtk.RESPONSE_OK))        
+            dialog.set_default_response(Gtk.RESPONSE_OK)
             dialog.set_current_folder(dialog.get_current_folder()+"/sensors/")
             dialog.set_current_name(self.sensorTypes[sensorNumber].name+".sensor")
             response = dialog.run()
-            if response == gtk.RESPONSE_OK:
+            if response == Gtk.RESPONSE_OK:
                 filename = dialog.get_filename()
                 dialog.destroy()
                 try:
@@ -344,14 +343,14 @@ class SensorsTab(Tab):
         if treeiter:
             sensorNumber = int(treemodel.get_path(treeiter)[0])
             
-            #dialog = gtk.FileChooserDialog(_("Salvar.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            dialog = gtk.FileChooserDialog(_("Save.."), None, gtk.FILE_CHOOSER_ACTION_SAVE,
-            (gtk.STOCK_CANCEL,gtk.RESPONSE_CANCEL,gtk.STOCK_SAVE, gtk.RESPONSE_OK))        
-            dialog.set_default_response(gtk.RESPONSE_OK)
+            #dialog = Gtk.FileChooserDialog(_("Salvar.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            dialog = Gtk.FileChooserDialog(_("Save.."), None, Gtk.FILE_CHOOSER_ACTION_SAVE,
+            (Gtk.STOCK_CANCEL,Gtk.RESPONSE_CANCEL,Gtk.STOCK_SAVE, Gtk.RESPONSE_OK))        
+            dialog.set_default_response(Gtk.RESPONSE_OK)
             dialog.set_current_folder(dialog.get_current_folder()+"/sensors/")
             dialog.set_current_name(self.sensorTypes[sensorNumber].name+".csv")
             response = dialog.run()
-            if response == gtk.RESPONSE_OK:
+            if response == Gtk.RESPONSE_OK:
                 filename = dialog.get_filename()
                 dialog.destroy()
                 try:
@@ -401,7 +400,7 @@ class SensorsTab(Tab):
                 else:
                     #print _("São necessários ao menos 2 pontos.")
                     #print _("It takes at least two points!")
-                    self.showInfo(_("At least two points required!"), self.gui.get_widget('mainWindow'))
+                    self.showInfo(_("At least two points required!"), self.gui.get_object('mainWindow'))
                 self.writeSensorsConfig()
     
     
@@ -428,7 +427,7 @@ class SensorsTab(Tab):
             return
         
         if self.graphContainer == None:
-            self.graphContainer = self.gui.get_widget("sensorGraphContainer")
+            self.graphContainer = self.gui.get_object("sensorGraphContainer")
             if self.graphContainer == None: return
             r = self.graphContainer.get_allocation()
             self.graphWidth, self.graphHeight = (r.width,r.height)
@@ -437,7 +436,7 @@ class SensorsTab(Tab):
         if self.graph != None:
             self.graphContainer.remove(self.graph.handler)
 
-        self.graph = plots.ScatterPlot('gtk', data=data,
+        self.graph = plots.ScatterPlot('Gtk', data=data,
                 width=self.graphWidth, height=self.graphHeight, background="white",
                 border=5, axis=True, grid=True, series_legend = False)
         

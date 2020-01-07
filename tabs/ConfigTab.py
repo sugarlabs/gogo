@@ -34,7 +34,7 @@ from gettext import gettext as _
 #	sys.exit(1)
 
 
-from Tab import Tab
+from .Tab import Tab
 #from pyLogoCompiler.Exceptions import *
 import os
 
@@ -51,11 +51,11 @@ class ConfigTab(Tab):
 
         self.notebookMain = notebookMain	
         self.statusbar = statusbar
-        self.labelConnected = self.gui.get_widget("labelConnected")
-        self.boardImage = self.gui.get_widget("imageMonitor")
+        self.labelConnected = self.gui.get_object("labelConnected")
+        self.boardImage = self.gui.get_object("imageMonitor")
         
         if self.activity:
-            lbl = self.gui.get_widget("labelTitleVersion")
+            lbl = self.gui.get_object("labelTitleVersion")
             lbl.set_markup(_('<b><span size="xx-large">GoGo Activity</span></b> (v %(version)s)' \
                                   % {"version": os.environ['SUGAR_BUNDLE_VERSION']}))        
             
@@ -79,7 +79,7 @@ class ConfigTab(Tab):
             #self.labelConnected.set_markup(_("<b><span size='xx-large'>Conectado</span></b>"))		
             self.labelConnected.set_markup(_("<b><span size='xx-large'>GoGo Connected</span></b>"))        
         else:
-            print "Gogo not found"
+            print("Gogo not found")
             #self.showWarning(_("Houve algum problema com a conexão verifique se a gogoboard está conectada adequadamente e se está ligada"))	
             self.showWarning(_("There were problems with the connection. Make sure the GoGo Board is properly connected."))    
         

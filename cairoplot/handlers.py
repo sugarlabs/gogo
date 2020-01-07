@@ -1,5 +1,5 @@
 import cairo
-import gtk
+from gi.repository import Gtk
 
 class Handler(object):
     """Base class for all handlers."""
@@ -90,12 +90,12 @@ class SVGHandler(VectorHandler):
         self.surface = cairo.SVGSurface(filename, width, height)
 
 
-class GTKHandler(gtk.DrawingArea, Handler):
+class GTKHandler(Gtk.DrawingArea, Handler):
     
     def __init__(self, width, height, *args, **kwargs):
         """Create Handler for arbitrary surfaces."""
         Handler.__init__(self)
-        gtk.DrawingArea.__init__(self)
+        Gtk.DrawingArea.__init__(self)
         self.context = None
         self.plot = None
         self.set_size_request(width, height)

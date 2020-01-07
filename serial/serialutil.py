@@ -18,13 +18,6 @@ PARITY_NAMES = {
 XON  = chr(17)
 XOFF = chr(19)
 
-#Python < 2.2.3 compatibility
-try:
-    True
-except:
-    True = 1
-    False = not True
-
 class SerialException(Exception):
     """Base class for serial port related exceptions."""
 
@@ -72,7 +65,7 @@ class FileLike(object):
         """read a list of lines, until timeout
         sizehint is ignored"""
         if self.timeout is None:
-            raise ValueError, _("Serial port MUST have enabled timeout for this function!")
+            raise ValueError(_("Serial port MUST have enabled timeout for this function!"))
         lines = []
         while 1:
             line = self.readline(eol=eol)
@@ -97,7 +90,7 @@ class FileLike(object):
         pass
 
     # iterator for e.g. "for line in Serial(0): ..." usage
-    def next(self):
+    def __next__(self):
         line = self.readline()
         if not line: raise StopIteration
         return line
@@ -195,7 +188,7 @@ class SerialBase(FileLike):
         was_open = self._isOpen
         if was_open: self.close()
         if port is not None:
-            if type(port) in [type(''), type(u'')]:       #strings are taken directly
+            if type(port) in [type(''), type('')]:       #strings are taken directly
                 self.portstr = port
             else:
                 self.portstr = self.makeDeviceName(port)
@@ -368,9 +361,9 @@ class SerialBase(FileLike):
 
 if __name__ == '__main__':
     s = SerialBase()
-    print s.portstr
-    print s.getSupportedBaudrates()
-    print s.getSupportedByteSizes()
-    print s.getSupportedParities()
-    print s.getSupportedStopbits()
-    print s
+    print(s.portstr)
+    print(s.getSupportedBaudrates())
+    print(s.getSupportedByteSizes())
+    print(s.getSupportedParities())
+    print(s.getSupportedStopbits())
+    print(s)
