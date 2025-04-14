@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2025-03-16 03:12+0000\n"
+"PO-Revision-Date: 2025-04-14 13:22+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/gogo/ka/>\n"
@@ -27,41 +27,41 @@ msgstr "GoGo"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:41
 msgid "You do not have the required version of GTK + and / or PyGTK installed."
-msgstr ""
+msgstr "GTK+-ის ან/და PyGTK-ის აუცილებელი ვერსია დაყენებული არ გაქვთ."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:43
 #, python-format
 msgid "The installed version of GTK+ is: %s"
-msgstr ""
+msgstr "GTK+-ის დაყენებული ვერსიაა: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:45
 msgid "The version of GTK + is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "GTK+-ის აუცილებელი ვერსიაა: 2.8.0 ან ახალი\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:48
 #, python-format
 msgid "The version of PyGTK installed is: %s"
-msgstr ""
+msgstr "დაყენებული PyGTK-ის ვერსიაა: %s"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:50
 msgid "The version of PyGTK is required: 2.8.0 or newer\n"
-msgstr ""
+msgstr "PyGTK-ის აუცილებელი ვერსიაა: 2.8.0 ან უფრო ახალი\n"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:55
 msgid "PyGTK 2.8.0 or newer is required."
-msgstr ""
+msgstr "აუცილებელია PyGTK 2.8.0, ან უფრო ახალი."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:57
 msgid "There was no version of PyGTK found on your system."
-msgstr ""
+msgstr "თქვენს სისტემაში PyGTK აღმოჩენილი არაა."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:73
 msgid "pySerial needs to be installed:"
-msgstr ""
+msgstr "pySerial-ის აუცილებელი ვერსია:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:127
 msgid "Board Monitor"
-msgstr ""
+msgstr "დაფის მონიტორი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/monitor.py:151
 msgid "Version "
@@ -69,18 +69,18 @@ msgstr "ვერსია "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:31
 msgid "Kiwi needs to be installed:"
-msgstr ""
+msgstr "Kiwi-ის აუცილებელი ვერსია:"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:142
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:144
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:93
 msgid "Gogo disconnected"
-msgstr ""
+msgstr "GoGo გათიშულია"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConfigTab.py:91
 msgid "<b><span size='xx-large'>Gogo Disconnected</span></b>"
-msgstr ""
+msgstr "<b><span size='xx-large'>GoGo გათიშულია</span></b>"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:160
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
@@ -94,11 +94,11 @@ msgstr "პიპინი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:165
 msgid "LED On"
-msgstr ""
+msgstr "LED ჩართულია"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:172
 msgid "LED Off"
-msgstr ""
+msgstr "LED გამორთულია"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
@@ -117,7 +117,7 @@ msgstr "ძრავა"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:191
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:194
 msgid "Controlling motors: "
-msgstr ""
+msgstr "მმართველი ძრავები: "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:202
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:210
@@ -140,7 +140,7 @@ msgstr " გამორთ"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:218
 msgid " Brake"
-msgstr ""
+msgstr " მუხრუჭი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
 msgid " Coast"
@@ -286,7 +286,7 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Name"
-msgstr ""
+msgstr "სახელი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:111
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
