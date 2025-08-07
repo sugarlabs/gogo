@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-01-13 16:03+0000\n"
-"PO-Revision-Date: 2025-04-14 13:22+0000\n"
+"PO-Revision-Date: 2025-08-07 10:32+0000\n"
 "Last-Translator: NF <rkavt@smartprojects.ge>\n"
 "Language-Team: Georgian <http://weblate.sugarlabs.org/projects/"
 "sugar-activities/gogo/ka/>\n"
@@ -144,7 +144,7 @@ msgstr " მუხრუჭი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:226
 msgid " Coast"
-msgstr ""
+msgstr " სანაპირო"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:235
 msgid "Power of Motors "
@@ -164,18 +164,18 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:259
 msgid " reversed"
-msgstr ""
+msgstr " დაცულია"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:300
 msgid " PwmDuty: "
-msgstr ""
+msgstr " PwmDuty: "
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:357
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:362
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:381
 msgid "Sensor"
-msgstr ""
+msgstr "სენსორი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ConsoleTab.py:334
 msgid "All sensor readings refreshed"
@@ -203,13 +203,13 @@ msgstr ""
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:107
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:245
 msgid "Open.."
-msgstr ""
+msgstr "გახსნა..."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:129
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:313
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:348
 msgid "Save.."
-msgstr ""
+msgstr "შენახვა..."
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/ProceduresTab.py:146
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/UploadTab.py:161
@@ -292,7 +292,7 @@ msgstr "სახელი"
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:229
 msgid "Unit"
-msgstr ""
+msgstr "ერთეული"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:112
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:227
@@ -302,15 +302,15 @@ msgstr "აღწერა"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:132
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:133
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:149
 msgid "Standard"
-msgstr ""
+msgstr "სტანდარტული"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:166
 msgid "The light value should be between 0 and 1023"
@@ -331,7 +331,7 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:209
 msgid "raw"
-msgstr ""
+msgstr "დაუმუშავებელი"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/tabs/SensorsTab.py:261
 #, python-format
@@ -466,7 +466,7 @@ msgstr ""
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:400
 msgid "size"
-msgstr ""
+msgstr "ზომა"
 
 #: /home/doc/std/dev/projects/xo-gogo-board/gogo.git/GoGo.activity/pyLogoCompiler/pyYacc.py:900
 #, python-format
